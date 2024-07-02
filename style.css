@@ -11,7 +11,7 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 
 .contenedorFormVoluntariado {
   width: 360px;
-  height: 400px;
+  height: 500px;
   margin: 8% auto;
   background-color: #121217;
   border-radius: 5px;
@@ -109,9 +109,11 @@ form button {
     border: 1px solid #f2901e;
     border-radius: 30px;
     padding: 10px;
+    margin: 8px;
     display: flex;
     align-items: center;
     position: relative;
+    cursor:pointer;
 }
 #form3 label:before{
     content: "";
@@ -120,6 +122,15 @@ form button {
     border: 2px solid #f2901e;
     border-radius: 50%;
     margin-right: 20px;
+}
+#form3 input[type="radio"]:checked + label{
+  background-color:  #f1aa57;
+  color: #cf6300;
+}
+#form3 input[type="radio"]:checked + label:before{
+  height: 16px;
+  width: 16px;
+  border: 8px solid #ff8412;
 }
 /*Caro:Esta causando un conflicto porque se superpone a todo */
 body {
