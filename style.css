@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Caro:Saca la barra de desplazamiento al ancho, 
+  quitar si quieren o les jode en algo, no cambia en negativo nada de lo trabajado si se quita.*/
+}
+/*TODO todos: Armar parallax Header y armar footer*/
+/*TODO CARO PAGINA VOLUNTARIADO: posiblemente ampliar el ancho del contenedor, 
+lo que implique realizar un cambio en Javascript. Hay mucho espacio en ancho
+desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
+
+.contenedorFormVoluntariado {
+  width: 360px;
+  height: 400px;
+  margin: 8% auto;
+  background-color: #121217;
+  border-radius: 5px;
+  position: relative;
+  color: #ba822e;
+  overflow: hidden;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #cf6300;
+  background-color: #121217;
+}
+.contenedorFormVoluntariado form {
+  background-color: #121217;
+  width: 280px;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  transition: 0.5s;
+}
+form input {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 0;
+  border-bottom: 1px solid #f1aa57;
+  outline: none;
+  background: transparent;
+}
+.btnForm {
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+  background-color: #121217;
+}
+form button {
+  width: 110px;
+  height: 35px;
+  margin: 0 10px;
+  background: linear-gradient(to right, #f1aa57, #f2901e);
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  color: #20180c;
+  cursor: pointer;
+}
+#form2 {
+  left: 450px;
+}
+#form3 {
+  left: 450px;
+}
+.step-row {
+  width: 360px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -1px 5px -1px #000;
+  position: relative;
+  background-color: #121217;
+}
+.step-col {
+  width: 120px;
+  text-align: center;
+  position: relative;
+  background-color: #121217;
+  
+}
+#progreso {
+  position: absolute;
+  height: 100%;
+  width: 120px;
+  background: linear-gradient(to right, #f1aa57, #f2901e);
+  background-color: linear-gradient(to right, #f1aa57, #f2901e);
+  transition: 1s;
+}
+#progreso::after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  right: -19px;
+  top: 0;
+  border-left: 20px solid #f2901e;
+}
+#form3 input[type="radio"]{
+    display: none;
+}
+#form3 label{
+    font-size: 20px;
+    border: 1px solid #f2901e;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#form3 label:before{
+    content: "";
+    height: 30px;
+    width: 30px;
+    border: 2px solid #f2901e;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+/*Caro:Esta causando un conflicto porque se superpone a todo */
+body {
+  background-color: #0e0e13;
+}
