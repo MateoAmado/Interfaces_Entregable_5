@@ -68,7 +68,7 @@ function mostrarNoticias(noticiasFiltradas) {
                 <div class="contenido_noticia">
                     <div class="titulo_noticia"><h1>${noticia.titulo}</h1></div>
                     <div class="resumen_noticia"><h1>${noticia.descripcion_breve}</h1></div>
-                    <a href="#" class="leer_mas">Leer más</a>
+                    <a href="noticia.html?id=${noticia.id}" class="leer_mas">Leer más</a>
                     <h2 class="fecha_noticia"><i class="fa-solid fa-calendar-days"></i>${noticia.fecha}</h2>
                 </div>
             </div>
@@ -78,4 +78,65 @@ function mostrarNoticias(noticiasFiltradas) {
 }
 
 
-document.addEventListener('DOMContentLoaded', main);
+//document.addEventListener('DOMContentLoaded', main);
+
+//Detalle Noticia
+function obtenerNoticiaPorId(id) {
+    return noticias.find(noticia => noticia.id == id);
+}
+
+/*function mostrarDetalleNoticia(noticia) {
+    const contenedor = document.getElementById('noticia_detalle');
+    if (noticia) {
+        const noticiaHTML = `
+            <div class="noticia_detalles">
+                <div class="noticias_titulo">${noticia.titulo}</div>
+                <div class="img_noticia">
+                    <img src="${noticia.ruta_img}" alt="">
+                </div>
+                <div class="resumen_noticia"><h1>${noticia.descripcion}</h1></div>
+            </div>
+        `;
+        contenedor.innerHTML = noticiaHTML;
+    } else {
+        contenedor.innerHTML = "<p>Noticia no encontrada</p>";
+    }
+}*/
+
+function mostrarDetalleNoticia(noticia) {
+    const contenedor = document.getElementById('noticia_detalle');
+    if (noticia) {
+        const descripcionPartes = noticia.descripcion.split('.').map(parte => parte.trim()).filter(parte => parte.length > 0);
+        const descripcionHTML = descripcionPartes.map(parte => `<p>${parte}.</p>`).join('');
+
+        const noticiaHTML = `
+              <div class="noticia_detalles">
+                <div class="noticias_titulo">${noticia.titulo}</div>
+                <div class="noticia_header">
+                <h2 class="fecha_noticia"><i class="fa-regular fa-user"></i>Por Fundación ONG</h2>
+                <h2 class="fecha_noticia"><i class="fa-solid fa-calendar-days"></i>${noticia.fecha}</h2>
+                <h2 class="fecha_noticia"><i class="fa-solid fa-comment"></i>Sin comentarios</h2>
+                </div>
+                <div class="img_noticia">
+                    <img src="${noticia.ruta_img}" alt="">
+                </div>
+                <div class="resumen_noticia"><h1>${descripcionHTML}</h1></div>
+            </div>
+        `;
+        contenedor.innerHTML = noticiaHTML;
+    } else {
+        contenedor.innerHTML = "<p>Noticia no encontrada</p>";
+    }
+}
+
+function detalle() {
+    const params = new URLSearchParams(window.location.search);
+    
+    let idNoticia = params.get('id');
+    console.log(idNoticia);
+    if(idNoticia === null){
+        idNoticia = 1;
+    }
+    const noticia = obtenerNoticiaPorId(idNoticia);
+    mostrarDetalleNoticia(noticia);
+}

@@ -117,6 +117,7 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   justify-content: center;
   align-items: center;
   z-index: 2;
+  padding-top: 20px;
 }
 .introduccionform {
   width: 360px;
@@ -131,22 +132,27 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   text-align: center;
 }
 .introduccionform h1{
+  font-family: "Roboto", sans-serif;
+  color: #ffb038;
   margin-bottom: 20px;
   padding-top: 10px;
   border-top: 1px solid #cf6300;
 }
 .introduccionform h2{
+  font-family: "Roboto", sans-serif;
+  color: #ffb038;
   margin-bottom: 20px;
 }
 .introduccionform p{
+  font-family: "Roboto", sans-serif;
   padding-bottom: 10px;
   border-bottom: 1px solid #cf6300;
 }
-h3 {
+.contenedorFormVoluntariado h3 {
   text-align: center;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
-  color: #cf6300;
-  background-color: #121217;
+  color: #ffb038;
 }
 .contenedorFormVoluntariado form {
   background-color: #121217;
@@ -353,7 +359,43 @@ body {
   margin-top: 100px;
 }
 
+#noticia_detalle{
+  margin-top: 100px;
+}
 
+.noticia_detalles{
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.noticia_detalles .img_noticia{
+
+  width: 870px;
+    height: 900px;
+    background: aliceblue;
+    overflow: hidden;
+    border: solid orange;
+}
+
+.resumen_noticia p{
+  margin-top: 50px;
+}
+
+.noticia_detalles .resumen_noticia{
+
+  width: 870px;
+}
+
+.noticia_header{
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 35px;
+  width: 53%;
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+}
 /*Fin Pagina Noticias*/
 
 
@@ -435,6 +477,7 @@ footer {
 .redes {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  overflow: hidden;
 }
 
 .texto {
@@ -470,6 +513,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  
 }
 
 .texto {
@@ -498,4 +542,5 @@ footer img {
 .redes span:hover{
   cursor:pointer;
   color: #cf6300 !important;
+  
 }

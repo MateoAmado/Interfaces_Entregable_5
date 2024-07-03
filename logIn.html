@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forestaton</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/32c91c5a9f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+<header>
+  <!-- Paso algo raro en el parallax, hay una ventana blanca emergente, que no se la procedencia. te estan hackeando hrmano tapa la camara!!-->
+  <div class="parallax">
+    <div class="Imagen imagenCielo"></div>
+    <h2 class="tituloBanner">Forestaton</h2>
+    <h2 class="tituloBanner">Forestaton</h2>
+    <div class="Imagen imagenMontania"></div>
+  </div>
+  <nav class="nav">
+    <a href="index.html" id="navLogo">Forestaton</a>
+    <a href="index.html" class="navA">Inicio</a>
+    <a href="voluntariado.html" class="navA">Voluntariado</a>
+    <a href="noticias.html" class="navA">Noticias</a>
+    <a href="logIn.html" class="navA">Iniciar sesión</a>
+  </nav>
+</header>    
+<header>
         <nav class="nav">
           <a href="index.html" id="navLogo">Forestaton</a>
           <a href="index.html" class="navA">Inicio</a>
@@ -51,5 +72,6 @@
         </div>
         <img src="img\logo forestaton.png" class="Logo" alt="Logo" srcset="">
       </footer>
-</body>
+      <script src="parallax.js"></script>
+    </body>
 </html>

@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Noticias</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -12,13 +9,16 @@
       src="https://kit.fontawesome.com/ac8abeaa44.js"
       crossorigin="anonymous"
     ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forestaton</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/32c91c5a9f.js" crossorigin="anonymous"></script>
   </head>
-  <body onload="main()">
+  <body onload="detalle()">
     <header>
       <!-- Paso algo raro en el parallax, hay una ventana blanca emergente, que no se la procedencia. te estan hackeando hrmano tapa la camara!!-->
       <div class="parallax">
@@ -36,28 +36,8 @@
       </nav>
     </header>
 
-    <h1 class="noticias_titulo">Noticias</h1>
-    <div class="buscador">
-      <img src="img/lupa.png" alt="" class="lupa" />
-      <input
-        type="text"
-        maxlength="30"
-        class="buscador_input"
-        id="buscador_noticia"
-      />
-    </div>
-    <div class="noticias" id="lista_noticias"></div>
-    <!-- <div class="noticia">
-                      <div class="img_noticia">
-                        <img src="img/dia_tierra.jpg" alt="" >
-                      </div>
-                      <div class="contenido_noticia">
-                          <div class="titulo_noticia"><h1>Celebramos el dia de la Tierra</h1></div>
-                          <div class="resumen_noticia"><h1>En el Día de la Tierra, estamos orgullosos de compartir con ustedes la culminación de un hermoso proyecto en el Parque Sarmiento. ...
-                        </h1></div>
-                          <a href="" class="leer_mas">Leer mas</a>
-                      </div>
-              </div>-->
+    <div id="noticia_detalle"></div>
+
     <footer>
       <div class="redes">
         <span
