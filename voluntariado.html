@@ -1,80 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forestaton</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <div class="parallax">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forestaton</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/32c91c5a9f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Paso algo raro en el parallax, hay una ventana blanca emergente, que no se la procedencia-->
+    <div class="parallax">
       <div class="Imagen imagenCielo"></div>
       <h2 class="tituloBanner">Forestaton</h2>
       <h2 class="tituloBanner">Forestaton</h2>
       <div class="Imagen imagenMontania"></div>
     </div>
-      <nav class="nav">
-        <a href="index.html" id="navLogo">Forestaton</a>
-        <a href="index.html" class="navA">Inicio</a>
-        <a href="voluntariado.html" class="navA">Voluntariado</a>
-        <a href="noticias.html" class="navA">Noticias</a>
-        <a href="logIn.html" class="navA">Iniciar sesión</a>
-      </nav>
-    </header>
-    <div class="cajaVol">
-      <div class="introduccionform">
-        <h1>El cambio está en tus manos</h1>
-        <h2>El límite del desierto es un árbol</h2>
-        <p>Te invitamos a sumarte como voluntario. Tu aporte es valioso</p>
-      </div>
-      <div class="contenedorFormVoluntariado">
-        <form action="#" class="formularioVoluntariado" id="form1">
-          <h3>Sé parte de Forestaton</h3>
-          <input type="text" placeholder="Ingrese su email" required />
-          <div class="btnForm">
-            <button type="button" id="next1">Continuar</button>
-          </div>
-        </form>
-
-        <form action="#" class="formularioVoluntariado" id="form2">
-          <h3>Ingrese sus datos</h3>
-          <input type="text" placeholder="Ingrese su nombre" />
-          <input type="text" placeholder="Ingrese su apellido" />
-          <div class="btnForm">
-            <button type="button" id="back1">Volver</button>
-            <button type="button" id="next2">Continuar</button>
-          </div>
-        </form>
-        <form action="#" class="formularioVoluntariado" id="form3">
-          <h3>¿De qué manera desea colaborar?</h3>
-          <div class="opciones">
-            <input type="radio" name="colaboracion" id="colabDinero" />
-            <label for="colabDinero"> Donar dinero </label>
-            <input type="radio" name="colaboracion" id="colabSemillas" />
-            <label for="colabSemillas"> Donar Semillas </label>
-            <input type="radio" name="colaboracion" id="colabPlantar" />
-            <label for="colabPlantar"> Plantar </label>
-          </div>
-
-          <div class="btnForm">
-            <button type="button" id="back2">Volver</button>
-            <button type="submit" id="botonEnvio">Enviar</button>
-          </div>
-        </form>
-        <div class="step-row">
-          <div id="progreso"></div>
-          <div class="step-col"><small> Paso 1</small></div>
-          <div class="step-col"><small> Paso 2</small></div>
-          <div class="step-col"><small> Paso 3</small></div>
+    <nav class="nav">
+      <a href="index.html" id="navLogo">Forestaton</a>
+      <a href="index.html" class="navA">Inicio</a>
+      <a href="voluntariado.html" class="navA">Voluntariado</a>
+      <a href="noticias.html" class="navA">Noticias</a>
+      <a href="logIn.html" class="navA">Iniciar sesión</a>
+    </nav>
+  </header>
+  <div class="cajaVol">
+    <div class="introduccionform">
+      <h1>El cambio está en tus manos</h1>
+      <h2>El límite del desierto es un árbol</h2>
+      <p>Te invitamos a sumarte como voluntario. Tu aporte es valioso</p>
+    </div>
+    <div class="contenedorFormVoluntariado">
+      <form action="#" class="formularioVoluntariado" id="form1">
+        <h3>Sé parte de Forestaton</h3>
+        <input type="text" placeholder="Ingrese su email" required />
+        <div class="btnForm">
+          <button type="button" id="next1">Continuar</button>
         </div>
+      </form>
+
+      <form action="#" class="formularioVoluntariado" id="form2">
+        <h3>Ingrese sus datos</h3>
+        <input type="text" placeholder="Ingrese su nombre" />
+        <input type="text" placeholder="Ingrese su apellido" />
+        <div class="btnForm">
+          <button type="button" id="back1">Volver</button>
+          <button type="button" id="next2">Continuar</button>
+        </div>
+      </form>
+      <form action="#" class="formularioVoluntariado" id="form3">
+        <h3>¿De qué manera desea colaborar?</h3>
+        <div class="opciones">
+          <input type="radio" name="colaboracion" id="colabDinero" />
+          <label for="colabDinero"> Donar dinero </label>
+          <input type="radio" name="colaboracion" id="colabSemillas" />
+          <label for="colabSemillas"> Donar Semillas </label>
+          <input type="radio" name="colaboracion" id="colabPlantar" />
+          <label for="colabPlantar"> Plantar </label>
+        </div>
+
+        <div class="btnForm">
+          <button type="button" id="back2">Volver</button>
+          <button type="submit" id="botonEnvio">Enviar</button>
+        </div>
+      </form>
+      <div class="step-row">
+        <div id="progreso"></div>
+        <div class="step-col"><small> Paso 1</small></div>
+        <div class="step-col"><small> Paso 2</small></div>
+        <div class="step-col"><small> Paso 3</small></div>
       </div>
     </div>
-    <footer><p>footerfooter</p></footer>
-    <script src="voluntarioForm.js"></script>
-    <script src="parallax.js"></script>
-  </body>
+  </div>
+  <div class="border-wrapper"></div>
+  <footer>
+    <div class="redes">
+      <span style="font-size: 3em;   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);background-clip: text;">
+        <i class="fa-brands fa-square-instagram"></i>
+      </span>
+      <span style="font-size: 3em; color: #3b5998;">
+        <i class="fa-brands fa-square-facebook"></i>
+      </span>
+      <span style="font-size: 3em; color: #229ED9;">
+
+        <i class="fa-brands fa-telegram"></i>
+      </span>
+      <span style="font-size: 3em; color: white;">
+        <i class="fa-brands fa-square-x-twitter"></i>
+      </span>
+    </div>
+    <div class="texto">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nam possimus, optio velit delectus
+      quisquam minima unde aspernatur quae dolorem explicabo nemo in neque maxime quia cum voluptatibus illum. Quod.
+    </div>
+    <img src="img\logo forestaton.png" class="Logo" alt="Logo" srcset="">
+  </footer>
+  <script src="voluntarioForm.js"></script>
+  <script src="parallax.js"></script>
+</body>
+
 </html>
