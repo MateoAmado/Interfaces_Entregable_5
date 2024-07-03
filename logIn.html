@@ -8,15 +8,22 @@
     <title>Login</title>
 </head>
 <body>
-    <header>
-        <nav class="nav">
-          <a href="index.html" id="navLogo">Forestaton</a>
-          <a href="index.html" class="navA">Inicio</a>
-          <a href="voluntariado.html" class="navA">Voluntariado</a>
-          <a href="noticias.html" class="navA">Noticias</a>
-          <a href="logIn.html" class="navA">Iniciar sesión</a>
-        </nav>
-      </header>
+  <header>
+    <!-- Paso algo raro en el parallax, hay una ventana blanca emergente, que no se la procedencia. te estan hackeando hrmano tapa la camara!!-->
+    <div class="parallax">
+      <div class="Imagen imagenCielo"></div>
+      <h2 class="tituloBanner">Forestaton</h2>
+      <h2 class="tituloBanner">Forestaton</h2>
+      <div class="Imagen imagenMontania"></div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" id="navLogo">Forestaton</a>
+      <a href="index.html" class="navA">Inicio</a>
+      <a href="voluntariado.html" class="navA">Voluntariado</a>
+      <a href="noticias.html" class="navA">Noticias</a>
+      <a href="logIn.html" class="navA">Iniciar sesión</a>
+    </nav>
+  </header>
       <div class="loginDiv">
         <img src="img/logo forestaton.png" alt="Logo" srcset="">
         <label for="">Ingrese su Usuario o mail</label>
@@ -49,5 +56,6 @@
         </div>
         <img src="img\logo forestaton.png" class="Logo" alt="Logo" srcset="">
       </footer>
-</body>
+      <script src="parallax.js"></script>
+    </body>
 </html>

@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noticias</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ac8abeaa44.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body onload="main()">
-  <header>
-    <nav class="nav">
-      <a href="index.html" id="navLogo">Forestaton</a>
-      <a href="index.html" class="navA">Inicio</a>
-      <a href="voluntariado.html" class="navA">Voluntariado</a>
-      <a href="noticias.html" class="navA">Noticias</a>
-      <a href="logIn.html" class="navA">Iniciar sesión</a>
-    </nav>
-  </header>
-   
-        <h1 class="noticias_titulo">Noticias</h1>
-        <div class="buscador">
-            <img src="img/lupa.png" alt="" class="lupa">
-            <input type="text" maxlength="30" class="buscador_input" id="buscador_noticia">
-        </div>
-       <div class="noticias" id="lista_noticias">
-             
-       </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ac8abeaa44.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="main()">
+    <header>
+      <!-- Paso algo raro en el parallax, hay una ventana blanca emergente, que no se la procedencia. te estan hackeando hrmano tapa la camara!!-->
+      <div class="parallax">
+        <div class="Imagen imagenCielo"></div>
+        <h2 class="tituloBanner">Forestaton</h2>
+        <h2 class="tituloBanner">Forestaton</h2>
+        <div class="Imagen imagenMontania"></div>
+      </div>
+      <nav class="nav">
+        <a href="index.html" id="navLogo">Forestaton</a>
+        <a href="index.html" class="navA">Inicio</a>
+        <a href="voluntariado.html" class="navA">Voluntariado</a>
+        <a href="noticias.html" class="navA">Noticias</a>
+        <a href="logIn.html" class="navA">Iniciar sesión</a>
+      </nav>
+    </header>
+
+    <h1 class="noticias_titulo">Noticias</h1>
+    <div class="buscador">
+      <img src="img/lupa.png" alt="" class="lupa" />
+      <input
+        type="text"
+        maxlength="30"
+        class="buscador_input"
+        id="buscador_noticia"
+      />
+    </div>
+    <div class="noticias" id="lista_noticias"></div>
     <!-- <div class="noticia">
                       <div class="img_noticia">
                         <img src="img/dia_tierra.jpg" alt="" >
@@ -38,30 +54,38 @@
                           <a href="" class="leer_mas">Leer mas</a>
                       </div>
               </div>-->
-              <footer>
-                <div class="redes">
-                  <span style="font-size: 3em;   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);background-clip: text;">
-                    <i class="fa-brands fa-square-instagram"></i>
-                  </span>
-                  <span style="font-size: 3em; color: #3b5998;">
-                    <i class="fa-brands fa-square-facebook"></i>
-                  </span>
-                  <span style="font-size: 3em; color: #229ED9;">
-            
-                    <i class="fa-brands fa-telegram"></i>
-                  </span>
-                  <span style="font-size: 3em; color: white;">
-                    <i class="fa-brands fa-square-x-twitter"></i>
-                  </span>
-                </div>
-                <div class="texto">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nam possimus, optio velit delectus
-                  quisquam minima unde aspernatur quae dolorem explicabo nemo in neque maxime quia cum voluptatibus illum. Quod.
-                </div>
-                <img src="img\logo forestaton.png" class="Logo" alt="Logo" srcset="">
-              </footer>
-              
-              <script src="noticia.js"></script>
-              <script src="noticias.js"></script>
-</body>
+    <footer>
+      <div class="redes">
+        <span
+          style="
+            font-size: 3em;
+            background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+            background-clip: text;
+          "
+        >
+          <i class="fa-brands fa-square-instagram" style="overflow: hidden"></i>
+        </span>
+        <span style="font-size: 3em; color: #3b5998">
+          <i class="fa-brands fa-square-facebook" style="overflow: hidden"></i>
+        </span>
+        <span style="font-size: 3em; color: #229ed9">
+          <i class="fa-brands fa-telegram" style="overflow: hidden"></i>
+        </span>
+        <span style="font-size: 3em; color: white">
+          <i class="fa-brands fa-square-x-twitter" style="overflow: hidden"></i>
+        </span>
+      </div>
+      <div class="texto">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+        nam possimus, optio velit delectus quisquam minima unde aspernatur quae
+        dolorem explicabo nemo in neque maxime quia cum voluptatibus illum.
+        Quod.
+      </div>
+      <img src="img\logo forestaton.png" class="Logo" alt="Logo" srcset="" />
+    </footer>
+
+    <script src="noticia.js"></script>
+    <script src="noticias.js"></script>
+    <script src="parallax.js"></script>
+  </body>
 </html>

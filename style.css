@@ -4,7 +4,6 @@
   padding: 0;
   overflow-x: hidden; /* Caro:Saca la barra de desplazamiento al ancho, 
   quitar si quieren o les jode en algo, no cambia en negativo nada de lo trabajado si se quita.*/
-  font-family: "Roboto", sans-serif;
 }
 
 
@@ -118,6 +117,7 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   justify-content: center;
   align-items: center;
   z-index: 2;
+  padding-top: 20px;
 }
 .introduccionform {
   width: 360px;
