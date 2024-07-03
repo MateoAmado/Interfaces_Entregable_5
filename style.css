@@ -18,7 +18,8 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 
 .Imagen {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  max-height: 100vh;
   background-size: cover;
   background-position: center;
 }
@@ -28,8 +29,8 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-image: url("img/cielo.png");
+  height:100%;
+  background-image: url("img/cielo2.png");
   z-index: 1;
 }
 
@@ -111,9 +112,11 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   overflow: hidden;
 }
 .cajaVol {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 .introduccionform {
   width: 360px;

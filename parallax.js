@@ -7,7 +7,6 @@ document.addEventListener('scroll', function() {
   
     if (scrollPosition < windowHeight) {
       imagenCielo.style.transform = `translateY(${scrollPosition * 0.5}px)`;
-    
       if (scrollPosition >= windowHeight) {
         imagenMontania.style.position = 'fixed';
         imagenMontania.style.top = '-4px';
