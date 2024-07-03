@@ -5,39 +5,42 @@
   overflow-x: hidden; /* Caro:Saca la barra de desplazamiento al ancho, 
   quitar si quieren o les jode en algo, no cambia en negativo nada de lo trabajado si se quita.*/
 }
+
+
 /*TODO todos: Armar parallax Header y armar footer*/
 /*TODO CARO PAGINA VOLUNTARIADO: posiblemente ampliar el ancho del contenedor, 
 lo que implique realizar un cambio en Javascript. Hay mucho espacio en ancho
 desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 .parallax{
   width: 100vw;
-  max-height: 100vh;
+  height: 100vh;
 }
 
-.Imagen{
-  z-index: 1;
-  width: 100vw;
-  height: 100vh;
-  max-height: 100vh;
+.Imagen {
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
-
-.imagenCielo{
-  z-index:2;
-background-image: url("img/cielo.png");
-}
-
-.imagenMontania{
-  height: 105vh;
+.imagenCielo {
   position: absolute;
-  left: -0.75%;
-  width: 102vw;
-  top: -6px;
-  z-index: 4;
-background-image: url("img/Montania.png");
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/cielo.png");
+  z-index: 1;
+}
+
+.imagenMontania {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/Montania.png");
+  z-index: 2;
 }
 
 
