@@ -358,36 +358,69 @@ body {
 
 
 /*Inicio Pagina LogIn*/
+
+.cienvehache{
+  height: 91vh;
+  align-content: center;
+}
 .loginDiv{
-  width: 25%;
-  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 29%;
+  margin: 0 auto;
+  align-content: center;
   color: rgb(233, 232, 232);
 }
 
 .loginDiv img{
+  display: block;
   margin:0 auto;
-  width: 380px;
+  width: 350px;
   height: 290px;
 }
 
-.loginDiv label{
-  display: block;
-}
 .loginDiv input{
+  display: block;
+  margin:0 auto !important;
+  border-radius: 6px;
   width: 20rem;
   height: 1.5rem;
   margin: 2px 0 9px 0;
 }
 
+.loginDiv h5{
+  margin: 4px auto 0 auto;
+}
+
 .loginDiv h5 span{
-  margin: 9px auto 0 auto;
   font-size: larger;
-  color: #f1aa57;
+  color: #00dcf9cb;
+}
+
+.loginDiv label{
+  display: block;
+  margin: 1rem auto 4px auto;
+  width: 20rem;
 }
 
 .loginDiv h5 span:hover{
   cursor: pointer;
-  color: #ba822e;
+  color: #008496;
+}
+
+.loginDiv button{
+  background-color: #FFCB65;
+  border-radius: 6px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  height: 35px;
+  width: 20rem;
+  margin: 0.8rem auto 0 auto;
+}
+
+.loginDiv button:hover{
+  cursor: pointer;
+  background-color:#c59d4d;
 }
 /*Fin Pagina LogIn*/
 
