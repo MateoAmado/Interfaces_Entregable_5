@@ -7,6 +7,7 @@ const btnBackUno = document.getElementById("back1");
 const btnBackDos = document.getElementById("back2");
 const btnEnvio = document.getElementById("botonEnvio");
 const barraProgreso = document.getElementById("progreso");
+const introduccionformParrafo = document.querySelector('.introduccionform p');
 
 //Primer Paso
 btnNextUno.addEventListener("click", ()=>{
@@ -30,4 +31,14 @@ btnBackDos.addEventListener("click", ()=>{
     formDos.style.left ="40px";
     formTres.style.left ="450px";
     barraProgreso.style.width = "240px";
+});
+
+//Enviar Formulario
+btnEnvio.addEventListener("click", (event) => {
+    event.preventDefault();
+    introduccionformParrafo.textContent = "Le agradecemos por su colaboración, en los siguientes días un miembro del equipo se contactará con usted";
+    formUno.style.left = "40px";
+    formDos.style.left = "450px";
+    formTres.style.left = "450px";
+    barraProgreso.style.width = "120px";
 });
