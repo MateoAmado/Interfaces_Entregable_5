@@ -118,9 +118,7 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 
 /*Index escritorio*/
 .contenedorIndex{
-  
-  margin-left: 3em;
-  margin-right: 2em;
+  margin: 1em 2em 0 3em;
 }
 
 .que_es_forestaton {
@@ -175,7 +173,7 @@ width: 28rem;
 
 .cifras_forestaton {
   display: block;
-  margin: 0 auto;
+  margin: 0.2em auto 0 auto;
   width: 27rem;
   color: #d8801b;
   font-family: "Roboto", sans-serif;
@@ -221,6 +219,52 @@ width: 28rem;
 }
 
 /*fin nuevo slider*/
+
+/*Inicio Se Parte*/
+.seParte{
+width: 100%;
+}
+
+.seParte h3{
+  font-family: "Roboto", sans-serif;
+  margin: 1.2em auto 0.2em auto;
+  width: 10.5em;
+  font-size: 2.8em;
+  color: #d8801b;
+}
+
+.textoSerParte{
+  color:rgb(196, 196, 196);
+} 
+
+.textoSerParte p{
+  text-indent: 10px;
+  font-size: 1.4em;
+  font-family: "Roboto", sans-serif;
+  margin: 1rem 0 0 1rem;
+}
+
+.seParte a{
+  cursor: pointer;
+  width: 4em;
+  font-size: 32px;
+  background-color: #0094ff;
+  border-radius: 19px;
+  padding: 2em 4em;
+display: block;
+  margin: 1em auto 0 auto;
+}
+
+.seParte span{
+  color: #0094ff;
+}
+
+.seParte a:hover{
+ color:rgb(218, 218, 218);
+  background-color: #0061a7;
+}
+
+/*Fin Se Parte*/
 /*Voluntarios*/
 .contenedorFormVoluntariado {
   width: 800px;

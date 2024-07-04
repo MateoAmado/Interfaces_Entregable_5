@@ -1,72 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forestaton</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forestaton</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/32c91c5a9f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <!-- Paso algo raro en el parallax, hay una ventana blanca emergente, que no se la procedencia. te estan hackeando hrmano tapa la camara!!-->
-        <div class="parallax">
-          <div class="Imagen imagenCielo"></div>
-          <h2 class="tituloBanner">Forestaton</h2>
-          <h2 class="tituloBanner">Forestaton</h2>
-          <div class="Imagen imagenMontania"></div>
-        </div>
-        <nav class="nav">
-          <a href="index.html" id="conditionalLink">Forestaton</a>
-          <a href="index.html" class="navA navActive"><i class="fa-solid fa-house"></i>Inicio</a>
-          <a href="voluntariado.html" class="navA"><i class="fa-solid fa-handshake-angle"></i>Voluntariado</a>
-          <a href="noticias.html" class="navA"><i class="fa-solid fa-newspaper"></i>Noticias</a>
-          <a href="logIn.html" class="navA" id="conditionalLinklogout"><i class="fa-solid fa-right-to-bracket"></i>Iniciar sesión</a>
-        </nav>
-      </header>
-      <div class="contenedorIndex">
+  <header>
+    <!-- Paso algo raro en el parallax, hay una ventana blanca emergente, que no se la procedencia. te estan hackeando hrmano tapa la camara!!-->
+    <div class="parallax">
+      <div class="Imagen imagenCielo"></div>
+      <h2 class="tituloBanner">Forestaton</h2>
+      <h2 class="tituloBanner">Forestaton</h2>
+      <div class="Imagen imagenMontania"></div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" id="conditionalLink">Forestaton</a>
+      <a href="index.html" class="navA navActive"><i class="fa-solid fa-house"></i>Inicio</a>
+      <a href="voluntariado.html" class="navA"><i class="fa-solid fa-handshake-angle"></i>Voluntariado</a>
+      <a href="noticias.html" class="navA"><i class="fa-solid fa-newspaper"></i>Noticias</a>
+      <a href="logIn.html" class="navA" id="conditionalLinklogout"><i class="fa-solid fa-right-to-bracket"></i>Iniciar
+        sesión</a>
+    </nav>
+  </header>
+  <div class="contenedorIndex">
 
-        <div class="que_es_forestaton">
-          <h1>¿Que es forestaton?</h1>
-          <div class="descripcion_logo">
-            <p>Somos una ONG que tiene como objetivo la forestación de especies vegetales nativas de la provincia de Córdoba y la transmisión de valores de respeto a la naturaleza y los bosques autóctonos. <br> <br> Es nuestra convicción que forestar tiene un impacto significativo para revertir los efectos del calentamiento global y el cambio climático.</p>
+    <div class="que_es_forestaton">
+      <h1>¿Que es forestaton?</h1>
+      <div class="descripcion_logo">
+        <p>Somos una ONG que tiene como objetivo la forestación de especies vegetales nativas de la provincia de Córdoba
+          y la transmisión de valores de respeto a la naturaleza y los bosques autóctonos. <br> <br> Es nuestra
+          convicción que forestar tiene un impacto significativo para revertir los efectos del calentamiento global y el
+          cambio climático.</p>
 
-            <img src="img/logo forestaton.png" alt="">
-          </div> 
-        </div>
+        <img src="img/logo forestaton.png" alt="">
+      </div>
+    </div>
 
-        <div class="integrarFlechas">
-          <h2 class="cifras_forestaton">Forestaton en cifras</h2>
-          <div class="imagen_cifras">
-            <div class="flechas_y_estadistica">
-              <i class="fa-solid fa-arrow-left" onclick="izquierda()"></i>
-              <h2 class="estadistica">5076 Árboles plantados</h2>
-              <i class="fa-solid fa-arrow-right" onclick="derecha()"></i>
-            </div>
-            <div class="imagen_posicion">
-              <i class="fa-regular fa-circle" onclick="cambiarImagen(0)"></i>
-              <i class="fa-regular fa-circle" onclick="cambiarImagen(1)"></i>
-              <i class="fa-regular fa-circle" onclick="cambiarImagen(2)"></i>
-            </div>
-          </div>
+    <div class="integrarFlechas">
+      <h2 class="cifras_forestaton">Forestaton en cifras</h2>
+      <div class="imagen_cifras">
+        <div class="flechas_y_estadistica">
+          <i class="fa-solid fa-arrow-left" onclick="izquierda()"></i>
+          <h2 class="estadistica">5076 Árboles plantados</h2>
+          <i class="fa-solid fa-arrow-right" onclick="derecha()"></i>
         </div>
-        
+        <div class="imagen_posicion">
+          <i class="fa-regular fa-circle" onclick="cambiarImagen(0)"></i>
+          <i class="fa-regular fa-circle" onclick="cambiarImagen(1)"></i>
+          <i class="fa-regular fa-circle" onclick="cambiarImagen(2)"></i>
+        </div>
+      </div>
+    </div>
 
-          
-        </div>
+    <div class="seParte">
+      <h3>Se Parte de Forestaton</h3>
+      <div class="textoSerParte">
+        <p>
 
-      <div class="border-wrapper"></div>
-      
-      <div class="horizontal">
-        <div>
-        </div>
-        
-        </div>
-   <footer>
+          Unirte a nuestra ONG de forestación es una oportunidad única para contribuir activamente al cuidado del medio
+          ambiente. Cada árbol que plantamos juntos no solo combate el cambio climático, sino que también crea hábitats
+          vitales para diversas especies y mejora la calidad del aire. Ser parte de esta iniciativa significa tomar
+          acción concreta para preservar nuestro planeta y asegurar un futuro más verde y saludable para las
+          generaciones venideras.</p>
+        <p>
+          Además, en nuestra ONG creemos en la participación inclusiva. No importa tu experiencia previa o tu
+          disponibilidad de tiempo, siempre hay una forma en la que puedes contribuir. Ya sea a través de voluntariados
+          esporádicos o de roles más constantes, cada pequeño esfuerzo suma y es esencial para alcanzar nuestros
+          objetivos. Al unirte a nosotros, te convertirás en un agente de cambio positivo, formando parte de un
+          movimiento global que trabaja incansablemente por un planeta más verde. ¡Te invitamos a unirte a nuestra causa
+          y plantar juntos las semillas de un futuro mejor!
+        </p>
+        <p>
+          Para más información y para unirte a nuestra causa, haz click en el boton <span>Se Parte</span>.
+        </p>
+      </div>
+      <a>Se Parte</a>
+    </div>
+
+  </div>
+  <div class="horizontal">
+    <div>
+    </div>
+  </div>
+  <footer>
     <div class="redes">
       <span class="instagramLogo">
         <i class="fa-brands fa-square-instagram" style="overflow: hidden;"></i>
@@ -92,4 +117,5 @@
   <script src="parallax.js"></script>
   <script src="slider.js"></script>
 </body>
+
 </html>
