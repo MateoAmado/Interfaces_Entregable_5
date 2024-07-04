@@ -73,6 +73,7 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 .nav{
   display: flex;
   justify-content: center;
+  overflow-y: hidden;
   align-items: center;
   position: relative;
   height: 3.5rem;
@@ -107,6 +108,10 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 
 .nav a i{
   font-size: 24px;
+}
+
+.conditionalLink{
+  padding: 15px 16px;
 }
 
 .navActive{
@@ -198,7 +203,6 @@ cursor: pointer;
 }
 
 .slide div div:nth-child(1){
-  background-image: url("img/ciudades_noticia.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: screen;
@@ -633,6 +637,7 @@ body {
   height: 110vh;
   align-content: center;
 }
+
 .loginDiv{
   display: flex;
   flex-direction: column;
@@ -640,6 +645,7 @@ body {
   margin: 0 auto;
   align-content: center;
   color: rgb(233, 232, 232);
+
 }
 
 .loginDiv img{
@@ -652,9 +658,10 @@ body {
 .loginDiv input{
   display: block;
   margin:0 auto !important;
+  padding: 0 8px;
   border-radius: 6px;
   width: 20rem;
-  height: 1.5rem;
+  height: 2.5rem;
   margin: 2px 0 9px 0;
 }
 

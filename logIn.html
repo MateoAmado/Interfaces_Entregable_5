@@ -29,14 +29,15 @@
   </nav>
 </header>    
       <div class="cienvehache">
-      <div class="loginDiv">
+       <form class="loginDiv" id="formulario" action="">
         <img src="img/logo forestaton.png" alt="Logo" srcset="">
         <label for="">Ingrese su Usuario o mail</label>
-        <input type="text">
+        <input type="text" placeholder="Username" id="usuario">
         <label for="">Ingrese su contraseña</label>
-        <input type="password" name="" id="">
+        <input type="password" name="" placeholder="Password" id="contrasenia">
         <h5><span>¿Ha olvidado su contraseña?</span></h5>
-        <button>Login</button>
+        <button type="submit">Login</button>
+      </form>
       </div>
     </div>
       <footer>
@@ -61,6 +62,8 @@
         </div>
         <img src="img\logo forestaton.png" class="Logo" alt="Logo" srcset="">
       </footer>
+      <script src="sesionHelper.js"></script>
       <script src="parallax.js"></script>
+      <script src="loguearse.js"></script>
     </body>
 </html>
