@@ -117,6 +117,47 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 .navActive{
   background-color: #363636;
 }
+
+/*Index escritorio*/
+
+.que_es_forestaton{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.que_es_forestaton h1{
+  font-size: 70px;
+  color: orange;
+  font-family: "Roboto", sans-serif;
+}
+.descripcion_logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.descripcion_logo p{
+  background: #0e0e13;
+  /* width: auto; */
+  /* height: auto; */
+  margin-left: 100px;
+  font-size: 32px;
+  height: 308px;
+  width: 900px;
+  color: orange;
+  padding: 50px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.forestaton_descripcion{
+  display: block;
+}
+
+
+/*Fin Index escritorio*/
+
+
+
 /*Nuevo slider*/
 .imagen_cifras {
   height: 640px;
