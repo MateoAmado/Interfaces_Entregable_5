@@ -23,8 +23,8 @@
             }
         }
         if (comprobarSesion()) {
-            conditionalLink.innerHTML = '<i class="fa-solid fa-plus"></i>Agregar Noticia';
-            conditionalLink.href="agregar.html"
+            conditionalLink.innerHTML = 'Eventos';
+            conditionalLink.href="eventos.html"
             conditionalLink2.addEventListener("click",()=>{
                 desloguear(false);
             })

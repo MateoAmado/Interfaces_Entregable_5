@@ -503,11 +503,36 @@ body {
 /*Fin Pagina Noticias*/
 
 /*Pagina eventos*/
+.contenedor_eventos{
+  text-align: -webkit-center;
+}
+.agregar_evento{
+  text-align: center;
+    background: #f2c066;
+    font-size: x-large;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
 .titulo_evento {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 60px;
   color: #ffb038;
+  margin-top: 50px;
+}
+.eventos_titulo{
+  padding-top: 30px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 80px;
+  color: #ffb038;
+  text-shadow: -2px -2px 0 #fcff52, 2px -2px 0 #fcff52, -2px 2px 0 #fcff52, 2px 2px 0 #fcff52, 0 0 2px #fcff52;
 }
 .ubicacion_horario {
   margin-top: 20px;
@@ -595,6 +620,48 @@ body {
   font-family: "Roboto", sans-serif;
   cursor: pointer;
 }
+
+/*Modal eventos*/
+/* Estilos para el modal */
+body .modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*fin modal Eventos*/
 /*Fin Pagina eventos*/
 
 /*Inicio Pagina LogIn*/
