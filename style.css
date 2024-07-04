@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +5,11 @@
   quitar si quieren o les jode en algo, no cambia en negativo nada de lo trabajado si se quita.*/
 }
 
-
 /*TODO todos: Armar parallax Header y armar footer*/
 /*TODO CARO PAGINA VOLUNTARIADO: posiblemente ampliar el ancho del contenedor, 
 lo que implique realizar un cambio en Javascript. Hay mucho espacio en ancho
 desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
-.parallax{
+.parallax {
   width: 100vw;
   height: 100vh;
 }
@@ -30,7 +28,7 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   top: 0;
   left: 0;
   width: 100%;
-  height:100%;
+  height: 100%;
   background-image: url("img/cielo2.png");
   z-index: 1;
 }
@@ -44,7 +42,6 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   background-image: url("img/Montania.png");
   z-index: 2;
 }
-
 
 .tituloBanner {
   position: absolute;
@@ -67,10 +64,10 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 
 .tituloBanner:nth-child(3) {
   z-index: 100;
-  color: #FF8B20;
+  color: #ff8b20;
 }
 
-.nav{
+.nav {
   display: flex;
   justify-content: center;
   overflow-y: hidden;
@@ -81,53 +78,53 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   background-color: #121217;
 }
 
-.nav a{
+.nav a {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
-  padding:1rem 5rem;
-  color: #C7C7C7;
+  padding: 1rem 5rem;
+  color: #c7c7c7;
   text-decoration: none;
 }
 
-.nav a:nth-child(3){
-  color:white;
+.nav a:nth-child(3) {
+  color: white;
   background-color: #0094ff;
   border-radius: 20px;
 }
 
-.nav a:nth-child(3):hover{
-  color:#0094ff;
+.nav a:nth-child(3):hover {
+  color: #0094ff;
   background-color: white;
   border-radius: 20px;
 }
 
-.nav a:hover{
+.nav a:hover {
   color: rgb(235, 235, 235);
   background-color: #000;
 }
 
-.nav a i{
+.nav a i {
   font-size: 24px;
 }
 
-.conditionalLink{
+.conditionalLink {
   padding: 15px 16px;
 }
 
-.navActive{
+.navActive {
   background-color: #363636;
 }
 /*Nuevo slider*/
 .imagen_cifras {
   height: 640px;
-  background-image: url('img/ciudades_noticia.png');
+  background-image: url("img/ciudades_noticia.png");
   background-size: cover;
   margin-left: 200px;
   margin-right: 200px;
   position: relative;
 }
 
-.cifras_forestaton{
+.cifras_forestaton {
   margin: 1rem 0 1rem 36vw;
   width: 100%;
   color: #d8801b;
@@ -148,7 +145,6 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   font-family: "Roboto", sans-serif;
   font-size: 48px;
 }
-
 
 .flechas_y_estadistica i {
   color: white;
@@ -174,10 +170,11 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   color: #d8801b;
 }
 
-
 /*fin nuevo slider*/
+/*Voluntarios*/
 .contenedorFormVoluntariado {
-  width: 360px;
+  width: 800px;
+  height: 500px;
   background-color: #121217;
   border-radius: 5px;
   position: relative;
@@ -188,49 +185,52 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 
 .introduccionform {
   padding-top: 20px;
-  background-color: #121217;
-  border-radius: 5px;
-  color: #ba822e;
+  color: #d0d0d0;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 20px;
 }
-.introduccionform h1{
+.introduccionform h1 {
   font-family: "Roboto", sans-serif;
   font-size: 80px;
-  color: #ffb038;
+   color: #ffb038;
+  text-shadow: -2px -2px 0 #fcff52, 2px -2px 0 #fcff52, -2px 2px 0 #fcff52,
+    2px 2px 0 #fcff52, 0 0 2px #fcff52; 
   margin-bottom: 20px;
   padding-top: 10px;
 }
-.introduccionform h2{
+.introduccionform h2 {
   font-family: "Roboto", sans-serif;
   font-size: 60px;
-  color: #ffb038;
+  color: #ffbe5e;
   margin-bottom: 20px;
 }
-.introduccionform p{
+.introduccionform p {
   font-family: "Roboto", sans-serif;
   padding-bottom: 10px;
-  font-size: 20px;
+  font-size: 32px;
 }
 .contenedorFormVoluntariado h3 {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
-  color: #ffb038;
+  color: #ffbe5e;
 }
 .contenedorFormVoluntariado form {
   background-color: #121217;
-  width: 280px;
+  border-radius: 30px;
+  width: 760px;
   position: absolute;
-  top: 100px;
+  margin: 0 auto;
   left: 40px;
+  top: 100px;
   transition: 0.5s;
 }
 form input {
-  width: 100%;
+  width: 700px;
   padding: 10px 5px;
   margin: 5px 0;
   border: 0;
@@ -257,10 +257,10 @@ form button {
   cursor: pointer;
 }
 #form2 {
-  left: 450px;
+  left: 800px;
 }
 #form3 {
-  left: 450px;
+  left: 800px;
 }
 .step-row {
   width: 360px;
@@ -315,23 +315,23 @@ form button {
   width: 16px;
   border: 8px solid #ff8412;
 }
-/*Caro:Esta causando un conflicto porque se superpone a todo */
 body {
   background-color: #0e0e13;
 }
 
 /*Pagina Noticias*/
 .noticias_titulo {
+  padding-top: 30px;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size: 100px;
+  font-size: 80px;
   color: #ffb038;
   text-shadow: -2px -2px 0 #fcff52, 2px -2px 0 #fcff52, -2px 2px 0 #fcff52,
     2px 2px 0 #fcff52, 0 0 2px #fcff52; /* Ajuste para asegurar el contorno */
 }
 .buscador {
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 30px;
   width: max-content;
   height: max-content;
   display: flex;
@@ -426,36 +426,34 @@ body {
   margin-top: 100px;
 }
 
-#noticia_detalle{
-  margin-top: 100px;
+#noticia_detalle {
+  padding-top: 30px;
 }
 
-.noticia_detalles{
+.noticia_detalles {
   display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
-.noticia_detalles .img_noticia{
-
+.noticia_detalles .img_noticia {
   width: 870px;
-    height: 900px;
-    background: aliceblue;
-    overflow: hidden;
-    border: solid orange;
+  height: 900px;
+  background: aliceblue;
+  overflow: hidden;
+  border: solid orange;
 }
 
-.resumen_noticia p{
+.resumen_noticia p {
   margin-top: 50px;
 }
 
-.noticia_detalles .resumen_noticia{
-
+.noticia_detalles .resumen_noticia {
   width: 870px;
 }
 
-.noticia_header{
+.noticia_header {
   display: flex;
   margin-top: 100px;
   margin-bottom: 35px;
@@ -466,20 +464,19 @@ body {
 /*Fin Pagina Noticias*/
 
 /*Pagina eventos*/
-.titulo_evento{
+.titulo_evento {
   text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 60px;
-    color: #ffb038;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  color: #ffb038;
 }
-.ubicacion_horario{
+.ubicacion_horario {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
-.ubicacion{
+.ubicacion {
   display: block;
   background: #323232;
   /* padding: 70px; */
@@ -491,18 +488,18 @@ body {
   border-bottom-left-radius: 20px;
   border-right: solid 2px gray;
 }
-.ubicacion i{
+.ubicacion i {
   font-size: 150px;
-    color: white;
+  color: white;
 }
-.ubicacion a{
-  color: #0094FF;
-    display: block;
-    font-size: 50px;
-    font-family: "Roboto", sans-serif;
-    margin-top: 40px;
+.ubicacion a {
+  color: #0094ff;
+  display: block;
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 40px;
 }
-.horario{
+.horario {
   display: block;
   /* background: #d2d2d2; */
   background: #323232;
@@ -515,17 +512,17 @@ body {
   border-left: solid 2px gray;
   border-bottom-right-radius: 20px;
 }
-.horario h2{
+.horario h2 {
   font-size: 50px;
   font-family: "Roboto", sans-serif;
   color: #c6c6c6;
 }
-.horario i{
+.horario i {
   font-size: 150px;
-    color: white;
-    margin-bottom: 10px;
+  color: white;
+  margin-bottom: 10px;
 }
-.borrar_evento{
+.borrar_evento {
   font-size: 50px;
   height: min-content;
   margin-left: 10px;
@@ -535,21 +532,21 @@ body {
   /* text-align: center; */
   justify-content: center;
 }
-.borrar_evento h2{
+.borrar_evento h2 {
   text-align: center;
-    background: #ff6767;
-    font-size: x-large;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    padding: 10px;
-    font-family: "Roboto", sans-serif;
+  background: #ff6767;
+  font-size: x-large;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
 }
-.enviar_voluntarios{
+.enviar_voluntarios {
   display: flex;
   justify-content: center;
   color: white;
 }
-.enviar_voluntarios h2{
+.enviar_voluntarios h2 {
   text-align: center;
   background: #f2c066;
   font-size: x-large;
@@ -561,35 +558,32 @@ body {
 }
 /*Fin Pagina eventos*/
 
-
-
 /*Inicio Pagina LogIn*/
 
-.cienvehache{
+.cienvehache {
   height: 110vh;
   align-content: center;
 }
 
-.loginDiv{
+.loginDiv {
   display: flex;
   flex-direction: column;
   width: 29%;
   margin: 0 auto;
   align-content: center;
   color: rgb(233, 232, 232);
-
 }
 
-.loginDiv img{
+.loginDiv img {
   display: block;
-  margin:0 auto;
+  margin: 0 auto;
   width: 350px;
   height: 290px;
 }
 
-.loginDiv input{
+.loginDiv input {
   display: block;
-  margin:0 auto !important;
+  margin: 0 auto !important;
   padding: 0 8px;
   border-radius: 6px;
   width: 20rem;
@@ -597,28 +591,28 @@ body {
   margin: 2px 0 9px 0;
 }
 
-.loginDiv h5{
+.loginDiv h5 {
   margin: 4px auto 0 auto;
 }
 
-.loginDiv h5 span{
+.loginDiv h5 span {
   font-size: larger;
   color: #00dcf9cb;
 }
 
-.loginDiv label{
+.loginDiv label {
   display: block;
   margin: 1rem auto 4px auto;
   width: 20rem;
 }
 
-.loginDiv h5 span:hover{
+.loginDiv h5 span:hover {
   cursor: pointer;
   color: #008496;
 }
 
-.loginDiv button{
-  background-color: #FFCB65;
+.loginDiv button {
+  background-color: #ffcb65;
   border-radius: 6px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -627,9 +621,9 @@ body {
   margin: 0.8rem auto 0 auto;
 }
 
-.loginDiv button:hover{
+.loginDiv button:hover {
   cursor: pointer;
-  background-color:#c59d4d;
+  background-color: #c59d4d;
 }
 /*Fin Pagina LogIn*/
 
@@ -673,14 +667,12 @@ footer {
   background-color: rgb(255, 255, 255);
 }
 
-
 .redes {
   grid-column: 1 / 3;
   grid-row: 1 / 2;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
 }
 
 .texto {
@@ -702,31 +694,31 @@ footer img {
   align-items: center;
 }
 
-.redes span, .texto, footer img {
+.redes span,
+.texto,
+footer img {
   margin: 10px;
 }
 
-.redes span:hover{
-  cursor:pointer;
+.redes span:hover {
+  cursor: pointer;
   color: #cf6300 !important;
-  
 }
 
-.instagramLogo{
+.instagramLogo {
   font-size: 3em;
   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-
 }
 
 /* Inicio de agregar Noticias */
-#root{
+#root {
   color: rgb(219, 218, 218);
 }
-#root h4{
-font-size: 48px;
+#root h4 {
+  font-size: 48px;
 }
 
 /*Fin de agregar Noticias*/

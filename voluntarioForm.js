@@ -11,25 +11,25 @@ const introduccionformParrafo = document.querySelector('.introduccionform p');
 
 //Primer Paso
 btnNextUno.addEventListener("click", ()=>{
-    formUno.style.left ="-450px";
+    formUno.style.left ="-800px";
     formDos.style.left ="40px";
     barraProgreso.style.width = "240px";
 });
 btnBackUno.addEventListener("click", ()=>{
     formUno.style.left ="40px";
-    formDos.style.left ="450px";
+    formDos.style.left ="800px";
     barraProgreso.style.width = "120px";
 });
 
 //Segundo Paso
 btnNextDos.addEventListener("click", ()=>{
-    formDos.style.left ="-450px";
+    formDos.style.left ="-800px";
     formTres.style.left ="40px";
     barraProgreso.style.width = "360px";
 });
 btnBackDos.addEventListener("click", ()=>{
     formDos.style.left ="40px";
-    formTres.style.left ="450px";
+    formTres.style.left ="800px";
     barraProgreso.style.width = "240px";
 });
 
@@ -38,7 +38,7 @@ btnEnvio.addEventListener("click", (event) => {
     event.preventDefault();
     introduccionformParrafo.textContent = "Le agradecemos por su colaboración, en los siguientes días un miembro del equipo se contactará con usted";
     formUno.style.left = "40px";
-    formDos.style.left = "450px";
-    formTres.style.left = "450px";
+    formDos.style.left = "800px";
+    formTres.style.left = "800px";
     barraProgreso.style.width = "120px";
 });
