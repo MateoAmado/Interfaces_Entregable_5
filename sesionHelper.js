@@ -28,6 +28,9 @@
             conditionalLink2.addEventListener("click",()=>{
                 desloguear(false);
             })
+            if(document.querySelector(".contenedor_agregar_noticia")){
+                document.querySelector(".contenedor_agregar_noticia").style.display = "flex";
+            }
             conditionalLink2.href="index.html"
             conditionalLink2.innerHTML='<i class="fa-solid fa-right-to-bracket"></i>Desloguear'
         }
@@ -39,4 +42,7 @@
         conditionalLink2.href='index.html'
         conditionalLink2.href="logIn.html"
         conditionalLink2.innerHTML='<i class="fa-solid fa-right-to-bracket"></i>Iniciar sesión'
+        if(document.querySelector(".contenedor_agregar_noticia")){
+            document.querySelector(".contenedor_agregar_noticia").style.display = "none";
+        }
     }

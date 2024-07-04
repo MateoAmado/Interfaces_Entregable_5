@@ -359,6 +359,20 @@ body {
 }
 
 /*Pagina Noticias*/
+.contenedor_agregar_noticia{
+  display: none;
+  justify-content: center;
+}
+.agregar_noticia{
+  background: #f2c066;
+  padding: 12px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  width: fit-content;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
 .noticias_titulo {
   padding-top: 30px;
   text-align: center;
@@ -500,6 +514,96 @@ body {
   /* flex-direction: row; */
   justify-content: space-evenly;
 }
+
+/*Modal noticias*/
+.modal_noticias {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content_noticia label{
+  color: white;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.modal-content_noticia form button{
+  margin: 0 10px;
+  background: linear-gradient(to right, #f1aa57, #f2901e);
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  color: #20180c;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.modal-content_noticia input{
+  width: 700px;
+  padding: 10px 16px;
+  /* margin: 14px 0; */
+  border: 0;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom: 2px solid #f1aa57;
+  outline: none;
+  background: transparent;
+  color: #f2901e;
+  margin-bottom: 40px;
+}
+
+.modal-content_noticia textarea{
+  width: 700px;
+  height: 203px;
+  padding: 10px;
+}
+
+.modal-content_noticia {
+  background-color: #0e0e13;
+  margin: 6% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+#descripcion{
+  display: block;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dark {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+/*Fin modal noticias*/
+
 /*Fin Pagina Noticias*/
 
 /*Pagina eventos*/

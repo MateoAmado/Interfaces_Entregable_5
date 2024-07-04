@@ -58,6 +58,7 @@ function main() {
 
 function mostrarNoticias(noticiasFiltradas) {
     const contenedor = document.getElementById('lista_noticias');
+    noticiasFiltradas.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
     contenedor.innerHTML = '';
     noticiasFiltradas.forEach(noticia => {
         const noticiaHTML = `
@@ -140,3 +141,39 @@ function detalle() {
     const noticia = obtenerNoticiaPorId(idNoticia);
     mostrarDetalleNoticia(noticia);
 }
+
+document.getElementById("agregarNoticia").addEventListener('click', () => {
+    document.getElementById("modal_noticias").style.display = "block";
+    document.querySelector('.dark').style.display = 'block';
+});
+
+document.querySelector(".close").addEventListener('click', () => {
+    document.getElementById("modal_noticias").style.display = "none";
+    document.querySelector('.dark').style.display = 'none';
+});
+
+document.getElementById("formAgregarNoticia").addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const titulo = document.getElementById("titulo").value;
+    const imagen = document.getElementById("imagen").value;
+    const descripcion = document.getElementById("descripcion").value;
+    let fecha = document.getElementById("fecha").value;
+    fecha = convertirFecha(fecha);
+
+    let id = noticias.length ? noticias[noticias.length - 1].id + 1 : 1;
+    let nuevaNoticia = new Noticia(id, imagen, titulo, descripcion, fecha);
+    noticias.push(nuevaNoticia);
+
+    document.getElementById("modal_noticias").style.display = "none";
+    document.querySelector('.dark').style.display = 'none';
+    main();
+});
+
+function convertirFecha(fecha) {
+    const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+    let [year, month, day] = fecha.split("-");
+    month = meses[parseInt(month) - 1];
+    return ` ${month} ${parseInt(day)}, ${year}`;
+}
+

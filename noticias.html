@@ -37,6 +37,23 @@
         </nav>
     </header>
 
+    <div id="modal_noticias" class="modal_noticias">
+      <div class="modal-content_noticia">
+          <span class="close">&times;</span>
+          <form id="formAgregarNoticia">
+              <label for="titulo">Título:</label><br>
+              <input type="text" id="titulo" name="titulo" required><br>
+              <label for="imagen">URL de la imagen:</label><br>
+              <input type="text" id="imagen" name="imagen" required><br>
+              <label for="descripcion">Descripción breve:</label><br>
+              <textarea id="descripcion" name="descripcion" required></textarea><br>
+              <label for="fecha">Fecha:</label><br>
+              <input type="date" id="fecha" name="fecha" required><br>
+              <button type="submit">Agregar Noticia</button>
+          </form>
+      </div>
+  </div>
+
     <h1 class="noticias_titulo">Noticias</h1>
     <div class="buscador">
       <img src="img/lupa.png" alt="" class="lupa" />
@@ -47,6 +64,11 @@
         id="buscador_noticia"
       />
     </div>
+    <div class="contenedor_agregar_noticia" id="noticia_container">
+    <div class="agregar_noticia" id="agregarNoticia">
+         <h2>Agregar Noticia</h2>
+    </div>
+  </div>
     <div class="noticias" id="lista_noticias"></div>
     <!-- <div class="noticia">
                       <div class="img_noticia">
