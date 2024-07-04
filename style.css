@@ -476,6 +476,103 @@ body {
 }
 /*Fin Pagina Noticias*/
 
+/*Pagina eventos*/
+.titulo_evento{
+  text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 60px;
+    color: #ffb038;
+}
+.ubicacion_horario{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.ubicacion{
+  display: block;
+  background: #323232;
+  /* padding: 70px; */
+  width: 310px;
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: solid 2px gray;
+}
+.ubicacion i{
+  font-size: 150px;
+    color: white;
+}
+.ubicacion a{
+  color: #0094FF;
+    display: block;
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 40px;
+}
+.horario{
+  display: block;
+  /* background: #d2d2d2; */
+  background: #323232;
+  /* padding: 70px; */
+  width: 310px;
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+  border-top-right-radius: 20px;
+  border-left: solid 2px gray;
+  border-bottom-right-radius: 20px;
+}
+.horario h2{
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  color: #c6c6c6;
+}
+.horario i{
+  font-size: 150px;
+    color: white;
+    margin-bottom: 10px;
+}
+.borrar_evento{
+  font-size: 50px;
+  height: min-content;
+  margin-left: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+}
+.borrar_evento h2{
+  text-align: center;
+    background: #ff6767;
+    font-size: x-large;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+}
+.enviar_voluntarios{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.enviar_voluntarios h2{
+  text-align: center;
+  background: #f2c066;
+  font-size: x-large;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+/*Fin Pagina eventos*/
+
+
 
 /*Inicio Pagina LogIn*/
 
