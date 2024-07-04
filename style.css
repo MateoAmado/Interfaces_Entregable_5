@@ -81,7 +81,7 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 
 .nav a {
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 1em;
   padding: 1rem 5rem;
   color: #c7c7c7;
   text-decoration: none;
@@ -105,7 +105,7 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 }
 
 .nav a i {
-  font-size: 24px;
+  font-size: 1em;
 }
 
 .conditionalLink {
@@ -117,6 +117,11 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 }
 
 /*Index escritorio*/
+.contenedorIndex{
+  
+  margin-left: 3em;
+  margin-right: 2em;
+}
 
 .que_es_forestaton {
   display: flex;
@@ -130,20 +135,27 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   font-family: "Roboto", sans-serif;
 }
 .descripcion_logo {
+  max-width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-items: center;
+}
+.descripcion_logo img{
+  margin: 0 auto;
+height: 20em;
+width: 28rem;
 }
 .descripcion_logo p {
+  overflow-y: hidden;
   background: #0e0e13;
   /* width: auto; */
   /* height: auto; */
-  margin-left: 100px;
-  font-size: 32px;
+  margin: 0 0rem 0 1.5rem;
+  font-size: 1.5em;
   height: 308px;
-  width: 900px;
+  width: 50%;
   color: orange;
-  padding: 50px;
+  padding: 1em;
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
@@ -158,14 +170,13 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   height: 640px;
   background-image: url("img/ciudades_noticia.png");
   background-size: cover;
-  margin-left: 200px;
-  margin-right: 200px;
   position: relative;
 }
 
 .cifras_forestaton {
-  margin: 1rem 0 1rem 36vw;
-  width: 100%;
+  display: block;
+  margin: 0 auto;
+  width: 27rem;
   color: #d8801b;
   font-family: "Roboto", sans-serif;
   font-size: 48px;
