@@ -108,10 +108,16 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 .nav a i{
   font-size: 24px;
 }
+
+.navActive{
+  background-color: #363636;
+}
 /*Inicio slider*/
 .integrarFlechas{
   display: block;
   width: 100vw;
+  max-height: 80vh;
+  overflow-y: hidden;
 }
 
 .integrarFlechas h2{
@@ -184,20 +190,40 @@ cursor: pointer;
 .slide div{
   display: flex;
   justify-content: center;
-
   overflow-y: hidden;
   height: 100%;
   width: 90vw;
   margin-right: 5rem;
+  align-items: center;
+}
+
+.slide div div:nth-child(1){
+  background-image: url("img/ciudades_noticia.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: screen;
+}
+
+.slide div div:nth-child(2){
+  background-image: url("img/dia_animal.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(0.5);
+  -moz-filter: brightness(0.5);
+  -o-filter: brightness(0.5);
+  -ms-filter: brightness(0.5);
+  filter: brightness(0.5);
 }
 
 .slide div h4{
-  position: absolute;
+  position:absolute;
   z-index: 10;
-  margin: 0 auto;
-  top: 145vh;
   font-size: 72px;
   color: #ffffff;
+}
+
+.slide div:nth-child(2) h4{
+  width: 35vw;
 }
 
 .slide div img{

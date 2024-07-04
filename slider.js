@@ -1,6 +1,6 @@
 const sliderInner=document.querySelector(".slide");
 
-let imagenes=sliderInner.querySelectorAll("div")
+let imagenes=sliderInner.querySelectorAll(".divImagen")
 let circulos=document.getElementsByClassName("fa-circle");
 
 let index=0;
