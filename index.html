@@ -30,25 +30,25 @@
       </header>
       <div class="contenedorIndex">
         <div class="integrarFlechas">
-          <h2>Forestaton en cifras</h2>
-           <i class="fa-solid fa-arrow-left flechaIzquierda" onclick="izquierda()"></i>
-           <div class="slide">
-            <div>
-              <!--Problema, al sacar el filter que tiene el div se pierde, deberiamos probar usando un alpha en el color de la imagen-->
-              <h4>5076 Árboles plantados</h4>
-              <div class="divImagen" style="
-  background-image: url(img/ciudades_noticia.png);"></div>
+          <h2 class="cifras_forestaton">Forestaton en cifras</h2>
+          <div class="imagen_cifras">
+            <div class="flechas_y_estadistica">
+              <i class="fa-solid fa-arrow-left" onclick="izquierda()"></i>
+              <h2 class="estadistica">5076 Árboles plantados</h2>
+              <i class="fa-solid fa-arrow-right" onclick="derecha()"></i>
             </div>
-            <div>
-              <h4>726 Voluntarios</h4>
-              <div class="divImagen"></div>
+            <div class="imagen_posicion">
+              <i class="fa-regular fa-circle" onclick="cambiarImagen(0)"></i>
+              <i class="fa-regular fa-circle" onclick="cambiarImagen(1)"></i>
+              <i class="fa-regular fa-circle" onclick="cambiarImagen(2)"></i>
             </div>
           </div>
-          <i class="fa-regular fa-circle"></i>
-          <i class="fa-regular fa-circle"></i>
-          <i class="fa-regular fa-circle"></i>
-          <i class="fa-solid fa-arrow-right flechaDerecha" onclick="derecha()"></i>
         </div>
+        
+
+          
+        </div>
+
       <div class="border-wrapper"></div>
       
   

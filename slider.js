@@ -1,33 +1,49 @@
-const sliderInner=document.querySelector(".slide");
+let imagenes = [
+    'url(img/arboles_plantados.png)',
+    'url(img/voluntarios.png)',
+    'url(img/cordoba_lago.png)'
+  ];
+  
+  let estadisticas = [
+    '5076 Árboles plantados',
+    '729 Voluntarios',
+    '26 Localidades de cordoba'
+  ];
+  
+  
+let indiceActual = 0;
 
-let imagenes=sliderInner.querySelectorAll(".divImagen")
-let circulos=document.getElementsByClassName("fa-circle");
+function mostrarImagen() {
+  document.querySelector('.imagen_cifras').style.backgroundImage = imagenes[indiceActual];
+  document.querySelector('.estadistica').innerText = estadisticas[indiceActual];
 
-let index=0;
-circulos[index].classList.add("fa-solid");
-
-
-
-function derecha(){
-    circulos[index].classList.remove("fa-solid");
-    circulos[index].classList.add("fa-regular");
-    index++;
-    if(index>imagenes.length-1){
-        index=0;
+  let circles = document.querySelectorAll('.imagen_posicion i');
+  circles.forEach((circle, index) => {
+    if (index === indiceActual) {
+      circle.classList.remove('fa-regular');
+      circle.classList.add('fa-solid');
+    } else {
+      circle.classList.remove('fa-solid');
+      circle.classList.add('fa-regular');
     }
-    let porcentaje=index*-95;
-    sliderInner.style.transform="translateX("+porcentaje+"vw)";
-    circulos[index].classList.add("fa-solid");
+  });
 }
 
-function izquierda(){
-    circulos[index].classList.remove("fa-solid");
-    circulos[index].classList.add("fa-regular");
-    index--;
-    if (index < 0) {
-        index = imagenes.length - 1;
-    }
-    let porcentaje = index * -95;
-    sliderInner.style.transform = "translateX(" + porcentaje + "vw)";
-    circulos[index].classList.add("fa-solid");
+function izquierda() {
+  indiceActual = (indiceActual > 0) ? indiceActual - 1 : imagenes.length - 1;
+  mostrarImagen();
 }
+
+function derecha() {
+  indiceActual = (indiceActual < imagenes.length - 1) ? indiceActual + 1 : 0;
+  mostrarImagen();
+}
+
+function cambiarImagen(indice) {
+  indiceActual = indice;
+  mostrarImagen();
+}
+
+// Inicializar
+mostrarImagen();
+  
