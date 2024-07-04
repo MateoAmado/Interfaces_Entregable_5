@@ -3,6 +3,7 @@
   padding: 0;
   overflow-x: hidden; /* Caro:Saca la barra de desplazamiento al ancho, 
   quitar si quieren o les jode en algo, no cambia en negativo nada de lo trabajado si se quita.*/
+  font-family: "Roboto", sans-serif; 
 }
 
 /*TODO todos: Armar parallax Header y armar footer*/
@@ -73,7 +74,7 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   overflow-y: hidden;
   align-items: center;
   position: relative;
-  height: 3.5rem;
+  height: 3.8rem;
   z-index: 5;
   background-color: #121217;
 }
@@ -117,23 +118,23 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 
 /*Index escritorio*/
 
-.que_es_forestaton{
+.que_es_forestaton {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
 }
-.que_es_forestaton h1{
-  font-size: 70px;
+.que_es_forestaton h1 {
+  font-size: 80px;
   color: orange;
   font-family: "Roboto", sans-serif;
 }
-.descripcion_logo{
+.descripcion_logo {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.descripcion_logo p{
+.descripcion_logo p {
   background: #0e0e13;
   /* width: auto; */
   /* height: auto; */
@@ -146,14 +147,11 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
-.forestaton_descripcion{
+.forestaton_descripcion {
   display: block;
 }
 
-
 /*Fin Index escritorio*/
-
-
 
 /*Nuevo slider*/
 .imagen_cifras {
@@ -236,9 +234,9 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 .introduccionform h1 {
   font-family: "Roboto", sans-serif;
   font-size: 80px;
-   color: #ffb038;
+  color: #ffb038;
   text-shadow: -2px -2px 0 #fcff52, 2px -2px 0 #fcff52, -2px 2px 0 #fcff52,
-    2px 2px 0 #fcff52, 0 0 2px #fcff52; 
+    2px 2px 0 #fcff52, 0 0 2px #fcff52;
   margin-bottom: 20px;
   padding-top: 10px;
 }
