@@ -21,29 +21,34 @@
           <div class="Imagen imagenMontania"></div>
         </div>
         <nav class="nav">
-          <a href="index.html" id="navLogo">Forestaton</a>
+          <a href="index.html" id="conditionalLink">Forestaton</a>
           <a href="index.html" class="navA navActive"><i class="fa-solid fa-house"></i>Inicio</a>
           <a href="voluntariado.html" class="navA"><i class="fa-solid fa-handshake-angle"></i>Voluntariado</a>
           <a href="noticias.html" class="navA"><i class="fa-solid fa-newspaper"></i>Noticias</a>
-          <a href="logIn.html" class="navA"><i class="fa-solid fa-right-to-bracket"></i>Iniciar sesión</a>
+          <a href="logIn.html" class="navA" id="conditionalLinklogout"><i class="fa-solid fa-right-to-bracket"></i>Iniciar sesión</a>
         </nav>
       </header>
       <div class="contenedorIndex">
         <div class="integrarFlechas">
-           <i class="fa-solid fa-arrow-left flechaIzquierda" onclick="izquierda()"></i>
-           <div class="slide">
-            <div>
-              <img src="img/ciudades_noticia.png" alt="Slide1" srcset="">
+          <h2 class="cifras_forestaton">Forestaton en cifras</h2>
+          <div class="imagen_cifras">
+            <div class="flechas_y_estadistica">
+              <i class="fa-solid fa-arrow-left" onclick="izquierda()"></i>
+              <h2 class="estadistica">5076 Árboles plantados</h2>
+              <i class="fa-solid fa-arrow-right" onclick="derecha()"></i>
             </div>
-            <div>
-              <img src="img/dia_animal.png" alt="Slide1" srcset="">
+            <div class="imagen_posicion">
+              <i class="fa-regular fa-circle" onclick="cambiarImagen(0)"></i>
+              <i class="fa-regular fa-circle" onclick="cambiarImagen(1)"></i>
+              <i class="fa-regular fa-circle" onclick="cambiarImagen(2)"></i>
             </div>
           </div>
-          <i class="fa-regular fa-circle"></i>
-          <i class="fa-regular fa-circle"></i>
-          <i class="fa-regular fa-circle"></i>
-          <i class="fa-solid fa-arrow-right flechaDerecha" onclick="derecha()"></i>
         </div>
+        
+
+          
+        </div>
+
       <div class="border-wrapper"></div>
       
   
@@ -69,6 +74,7 @@
     </div>
     <img src="img\logo forestaton.png" class="Logo" alt="Logo" srcset="">
   </footer>
+  <script src="sesionHelper.js"></script>
   <script src="parallax.js"></script>
   <script src="slider.js"></script>
 </body>

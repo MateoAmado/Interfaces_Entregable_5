@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/32c91c5a9f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- Paso algo raro en el parallax, hay una ventana blanca emergente, que no se la procedencia. te estan hackeando hrmano tapa la camara!!-->
+        <div class="parallax">
+          <div class="Imagen imagenCielo"></div>
+          <h2 class="tituloBanner">Forestaton</h2>
+          <h2 class="tituloBanner">Forestaton</h2>
+          <div class="Imagen imagenMontania"></div>
+        </div>
+        <nav class="nav">
+          <a href="index.html" id="conditionalLink">Forestaton</a>
+     
+          <a href="index.html" class="navA">Inicio</a>
+          <a href="voluntariado.html" class="navA">Voluntariado</a>
+          <a href="noticias.html" class="navA">Noticias</a>
+          <a href="logIn.html" class="navA" id="conditionalLinklogout"><i class="fa-solid fa-right-to-bracket"></i>Iniciar sesión</a>
+        </nav>
+      </header>
+      <div class="contenedor_eventos">
+              <h1 class="eventos_titulo"></h1>
+              <div class="lista_eventos" id="contenedor" ></div>
+      </div>
+      <footer>
+        <div class="redes">
+          <span style="font-size: 3em;   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);background-clip: text;">
+            <i class="fa-brands fa-square-instagram" style="overflow: hidden;"></i>
+          </span>
+          <span style="font-size: 3em; color: #3b5998;">
+            <i class="fa-brands fa-square-facebook" style="overflow: hidden;"></i>
+          </span>
+          <span style="font-size: 3em; color: #229ED9;">
+    
+            <i class="fa-brands fa-telegram" style="overflow: hidden;"></i>
+          </span>
+          <span style="font-size: 3em; color: white;">
+            <i class="fa-brands fa-square-x-twitter" style="overflow: hidden;"></i>
+          </span>
+        </div>
+        <div class="texto">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nam possimus, optio velit delectus
+          quisquam minima unde aspernatur quae dolorem explicabo nemo in neque maxime quia cum voluptatibus illum. Quod.
+        </div>
+        <img src="img\logo forestaton.png" class="Logo" alt="Logo" srcset="">
+      </footer> 
+      <script src="sesionHelper.js"></script>
+      <script src="evento.js"></script>
+      <script src="eventos.js"></script>
+</body>
+</html>

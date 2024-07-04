@@ -73,6 +73,7 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 .nav{
   display: flex;
   justify-content: center;
+  overflow-y: hidden;
   align-items: center;
   position: relative;
   height: 3.5rem;
@@ -81,6 +82,8 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 }
 
 .nav a{
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
   padding:1rem 5rem;
   color: #C7C7C7;
   text-decoration: none;
@@ -102,84 +105,77 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   color: rgb(235, 235, 235);
   background-color: #000;
 }
-/*Inicio slider*/
-.integrarFlechas{
-  display: block;
-  width: 100vw;
-}
-.slide{
-  overflow-x: visible;
-  height: 80vh;
-  width: 90vw;
-  margin:0 auto;
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-transition: all 0.3 ease-in;
+
+.nav a i{
+  font-size: 24px;
 }
 
-.flechaDerecha{
-  z-index: 10;
-position: absolute;
-right: 5rem;
-top:140vh;
-font-size: 72px;
-color: white;
-cursor: pointer;
+.conditionalLink{
+  padding: 15px 16px;
 }
 
-.flechaIzquierda{
-  position:absolute;
-  z-index: 10;
-  top:140vh;
-  left:5.5%;
-  font-size: 72px;
-color: white;
-cursor: pointer;
+.navActive{
+  background-color: #363636;
+}
+/*Nuevo slider*/
+.imagen_cifras {
+  height: 640px;
+  background-image: url('img/ciudades_noticia.png');
+  background-size: cover;
+  margin-left: 200px;
+  margin-right: 200px;
+  position: relative;
 }
 
-.fa-circle{
+.cifras_forestaton{
+  margin: 1rem 0 1rem 36vw;
+  width: 100%;
+  color: #d8801b;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+}
+.flechas_y_estadistica {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 550px;
+  align-items: center;
+  padding: 20px;
+}
+
+.flechas_y_estadistica .estadistica {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+}
+
+
+.flechas_y_estadistica i {
   color: white;
-  font-size: 32px;
-  overflow-y: hidden;
+  cursor: pointer;
+  font-size: 48px; /* Ajusta el tamaño del icono según sea necesario */
 }
 
-.fa-circle:nth-child(3){
+.imagen_posicion {
+  text-align: center;
   position: absolute;
-  left: 44%;
-  top:180vh;
+  bottom: 20px;
+  width: 100%;
 }
 
-.fa-circle:nth-child(4){
-  position: absolute;
-  left: 47%;
-  top:180vh;
-}
-.fa-circle:nth-child(5){
-  position: absolute;
-  left: 50%;
-  top:180vh;
+.imagen_posicion i {
+  margin: 0 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
 }
 
-.fa-solid{
-  font-size: 34px;
+.imagen_posicion .activo {
+  color: #d8801b;
 }
 
 
-.slide div{
-  filter: brightness(0.5);
-  overflow-y: hidden;
-  height: 100%;
-  width: 90vw;
-  margin-right: 5rem;
-}
-
-.slide div img{
-  height: 100%;
-  width: 90vw;
-}
-
-/*Fin slider*/
+/*fin nuevo slider*/
 .contenedorFormVoluntariado {
   width: 360px;
   background-color: #121217;
@@ -469,6 +465,103 @@ body {
 }
 /*Fin Pagina Noticias*/
 
+/*Pagina eventos*/
+.titulo_evento{
+  text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 60px;
+    color: #ffb038;
+}
+.ubicacion_horario{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.ubicacion{
+  display: block;
+  background: #323232;
+  /* padding: 70px; */
+  width: 310px;
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: solid 2px gray;
+}
+.ubicacion i{
+  font-size: 150px;
+    color: white;
+}
+.ubicacion a{
+  color: #0094FF;
+    display: block;
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 40px;
+}
+.horario{
+  display: block;
+  /* background: #d2d2d2; */
+  background: #323232;
+  /* padding: 70px; */
+  width: 310px;
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+  border-top-right-radius: 20px;
+  border-left: solid 2px gray;
+  border-bottom-right-radius: 20px;
+}
+.horario h2{
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  color: #c6c6c6;
+}
+.horario i{
+  font-size: 150px;
+    color: white;
+    margin-bottom: 10px;
+}
+.borrar_evento{
+  font-size: 50px;
+  height: min-content;
+  margin-left: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+}
+.borrar_evento h2{
+  text-align: center;
+    background: #ff6767;
+    font-size: x-large;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+}
+.enviar_voluntarios{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.enviar_voluntarios h2{
+  text-align: center;
+  background: #f2c066;
+  font-size: x-large;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+/*Fin Pagina eventos*/
+
+
 
 /*Inicio Pagina LogIn*/
 
@@ -476,6 +569,7 @@ body {
   height: 110vh;
   align-content: center;
 }
+
 .loginDiv{
   display: flex;
   flex-direction: column;
@@ -483,6 +577,7 @@ body {
   margin: 0 auto;
   align-content: center;
   color: rgb(233, 232, 232);
+
 }
 
 .loginDiv img{
@@ -495,9 +590,10 @@ body {
 .loginDiv input{
   display: block;
   margin:0 auto !important;
+  padding: 0 8px;
   border-radius: 6px;
   width: 20rem;
-  height: 1.5rem;
+  height: 2.5rem;
   margin: 2px 0 9px 0;
 }
 
@@ -624,3 +720,13 @@ footer img {
   color: transparent;
 
 }
+
+/* Inicio de agregar Noticias */
+#root{
+  color: rgb(219, 218, 218);
+}
+#root h4{
+font-size: 48px;
+}
+
+/*Fin de agregar Noticias*/
