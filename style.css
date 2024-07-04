@@ -101,7 +101,33 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   color: rgb(235, 235, 235);
   background-color: #000;
 }
+/*Inicio slider*/
+.slide{
+  overflow-x: visible;
+  height: 80vh;
+  width: 90vw;
+  margin:0 auto;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+transition: all 0.3 ease-in;
+}
 
+
+.slide div{
+  filter: brightness(0.5);
+  overflow-y: hidden;
+  height: 100%;
+  width: 90vw;
+  margin-right: 5rem;
+}
+
+.slide div img{
+  height: 100%;
+  width: 90vw;
+}
+
+/*Fin slider*/
 .contenedorFormVoluntariado {
   width: 360px;
   height: 450px;
@@ -543,4 +569,13 @@ footer img {
   cursor:pointer;
   color: #cf6300 !important;
   
+}
+
+.instagramLogo{
+  font-size: 3em;
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
 }
