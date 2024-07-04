@@ -856,8 +856,12 @@ footer {
   grid-row: 2 / 3;
 }
 
-.dark div{
-  margin: 0 auto;
+.horizontal{
+  width: 100%;
+}
+
+.horizontal div{
+  margin: 6rem auto 0 auto;
   border-bottom:solid 1px grey;
   width:80%;
   height:50px;
@@ -937,5 +941,6 @@ footer img {
 #root h4 {
   font-size: 48px;
 }
+
 
 /*Fin de agregar Noticias*/
