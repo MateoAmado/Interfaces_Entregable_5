@@ -1,5 +1,7 @@
 
-    function setearLogin(sesion) {
+   
+   
+   function setearLogin(sesion) {
         localStorage.setItem("sesion", sesion);
     }
 
@@ -13,6 +15,13 @@
     const conditionalLink2 = document.getElementById('conditionalLinklogout');
 
     document.addEventListener('DOMContentLoaded', function () {
+        const root=document.getElementById("root");
+        if(root){
+            console.log("entre")
+            if(!comprobarSesion()){
+                root.style.display="none"
+            }
+        }
         if (comprobarSesion()) {
             conditionalLink.innerHTML = '<i class="fa-solid fa-plus"></i>Agregar Noticia';
             conditionalLink.href="agregar.html"
@@ -24,6 +33,7 @@
         }
     });
     function desloguear(){
+        
         localStorage.setItem("sesion", false);
         conditionalLink.innerHTML='<i class="fa-solid fa-plus"></i>Forestaton'
         conditionalLink2.href='index.html'
