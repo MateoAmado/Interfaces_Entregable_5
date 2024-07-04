@@ -29,7 +29,7 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 50%;
   background-image: url("img/cielo2.png");
   z-index: 1;
 }
