@@ -282,6 +282,7 @@
   padding: 2em 4em;
   display: block;
   margin: 1em auto 0 auto;
+  color: white;
 }
 
 .seParte span {
@@ -1040,6 +1041,9 @@ footer img {
   background-image: url("img/cordoba_lago.png");
 }
 /*Fin de agregar Noticias*/
+.estadisticas_mobile{
+  display: none;
+}
 /*INDEX CELULAR*/
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
@@ -1050,9 +1054,52 @@ footer img {
   .tituloBanner {
     font-size: 5em;
   }
-
+  .que_es_forestaton {
+    padding-bottom: 50px;
+    border-bottom: solid 1px gray;
+  }
+  .que_es_forestaton h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.nav a span{
+  display: none;
+}
+.seParte h3 {
+  text-align: center;
+  padding-top: 70px;
+  width: auto;
+  border-top: solid 1px gray;
+}
+.textoSerParte p {
+  text-align: center;
+}
+.seParte a {
+  width: auto;
+  padding: 20px;
+  text-align: center;
+  
+}
+  .cifras_forestaton {
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-bottom: 70px;
+    width: 100%;
+    margin-top: 70px;
+  }
+  .estadisticas_mobile{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav{
+    justify-content: space-around;
+  }
   .nav a {
     padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 20px;
   }
 
   .fa-solid fa-arrow-left,
@@ -1084,6 +1131,7 @@ footer img {
   }
   .imagen_cifras {
     height: 640px;
+    display: none;
   }
 
   footer {
