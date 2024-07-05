@@ -24,7 +24,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 60%;
   background-image: url("img/cielo2.png");
   z-index: 1;
 }
@@ -250,49 +250,7 @@
 /*fin nuevo slider*/
 
 /*Inicio Se Parte*/
-.seParte {
-  width: 100%;
-}
 
-.seParte h3 {
-  font-family: "Roboto", sans-serif;
-  margin: 1.2em auto 0.2em auto;
-  width: 10.5em;
-  font-size: 2.8em;
-  color: #d8801b;
-}
-
-.textoSerParte {
-  color: rgb(196, 196, 196);
-}
-
-.textoSerParte p {
-  text-indent: 10px;
-  font-size: 1.4em;
-  font-family: "Roboto", sans-serif;
-  margin: 1rem 0 0 1rem;
-}
-
-.seParte a {
-  cursor: pointer;
-  width: 4em;
-  font-size: 32px;
-  background-color: #0094ff;
-  border-radius: 19px;
-  padding: 2em 4em;
-  display: block;
-  margin: 1em auto 0 auto;
-  color: white;
-}
-
-.seParte span {
-  color: #0094ff;
-}
-
-.seParte a:hover {
-  color: rgb(218, 218, 218);
-  background-color: #0061a7;
-}
 
 /*Fin Se Parte*/
 /*Voluntarios*/
@@ -1066,21 +1024,7 @@ footer img {
 .nav a span{
   display: none;
 }
-.seParte h3 {
-  text-align: center;
-  padding-top: 70px;
-  width: auto;
-  border-top: solid 1px gray;
-}
-.textoSerParte p {
-  text-align: center;
-}
-.seParte a {
-  width: auto;
-  padding: 20px;
-  text-align: center;
-  
-}
+
   .cifras_forestaton {
     font-size: 45px;
     font-family: "Roboto", sans-serif;
@@ -1162,4 +1106,50 @@ footer img {
     width: 200px;
     height: auto;
   }
+
+  .container h1{
+    margin: 0.5em 0 !important;
+    font-size: 1.4em !important;
+  }
+  .container p{
+    font-size: 0.8em !important;
+  }
+}
+
+
+
+.container {
+  margin: 10rem auto 3rem auto;
+  text-align: center;
+  color:orange;
+}
+
+.container *{
+  margin:0.2em !important;
+}
+
+.container h1{
+  font-size: 5rem;
+}
+
+.highlight {
+  margin: 1em 0; /* Color amarillo para resaltar */
+}
+
+.container p{
+  color: #ffeac3;
+}
+
+.botonSerParte {
+  margin: 1.2em !important;
+  border-radius: 14px;
+  background-color: #0094ff; /* Fondo amarillo para el botón */
+  color: #e7e7e7; /* Texto oscuro para contraste */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.botonSerParte:hover {
+  opacity: 0.9; /* Cambio sutil al pasar el mouse para dar feedback */
 }
