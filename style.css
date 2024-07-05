@@ -5,6 +5,9 @@
   font-family: "Roboto", sans-serif;
 }
 
+header{
+  margin-bottom: 100px;
+}
 .parallax {
   width: 100vw;
   height: 100vh;
@@ -79,6 +82,7 @@
   font-size: 1em;
   padding: 1rem 5rem;
   color: #c7c7c7;
+  border-radius: 20px;
   text-decoration: none;
 }
 
@@ -113,7 +117,7 @@
 
 /*Index escritorio*/
 .contenedorIndex {
-  margin: 1em 2em 0 3em;
+  margin: 1em 2em 0 2em;
 }
 /*
 .index_separte{
@@ -157,9 +161,12 @@
   padding-top: 30px;
 }
 .que_es_forestaton h1 {
-  font-size: 80px;
-  color: orange;
+  text-align: center;
   font-family: "Roboto", sans-serif;
+  font-size: 80px;
+  color: #ffb038;
+  text-shadow: -2px -2px 0 #fcff52, 2px -2px 0 #fcff52, -2px 2px 0 #fcff52, 2px 2px 0 #fcff52, 0 0 2px #fcff52;
+  margin-bottom: 30px;
 }
 .descripcion_logo {
   max-width: 100%;
@@ -170,7 +177,7 @@
 .descripcion_logo img {
   margin: 0 auto;
   height: 20em;
-  width: 28rem;
+  width: 24rem;
 }
 .descripcion_logo p {
   overflow-y: hidden;
@@ -178,13 +185,15 @@
   /* width: auto; */
   /* height: auto; */
   margin: 0 0rem 0 1.5rem;
-  font-size: 1.5em;
+  font-size: 1.6em;
   height: 308px;
   width: 50%;
   color: orange;
   padding: 1em;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  text-align: justify;
+  text-indent: 4px;
 }
 .forestaton_descripcion {
   display: block;
@@ -202,11 +211,13 @@
 
 .cifras_forestaton {
   display: block;
-  margin: 0.2em auto 0 auto;
-  width: 27rem;
-  color: #d8801b;
-  font-family: "Roboto", sans-serif;
-  font-size: 48px;
+    margin: 0.2em auto 0 auto;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 80px;
+    color: #ffb038;
+    text-shadow: -2px -2px 0 #fcff52, 2px -2px 0 #fcff52, -2px 2px 0 #fcff52, 2px 2px 0 #fcff52, 0 0 2px #fcff52;
+    margin-bottom: 30px;
 }
 .flechas_y_estadistica {
   display: flex;
@@ -409,6 +420,9 @@ body {
 }
 
 /*Pagina Noticias*/
+.noticias{
+  margin-bottom: 30px;
+}
 .contenedor_agregar_noticia {
   display: none;
   justify-content: center;
@@ -424,7 +438,7 @@ body {
 }
 
 .noticias_titulo {
-  padding-top: 30px;
+  
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 80px;
@@ -529,9 +543,7 @@ body {
   margin-top: 100px;
 }
 
-#noticia_detalle {
-  padding-top: 30px;
-}
+
 
 .noticia_detalles {
   display: flex;
@@ -670,7 +682,8 @@ body {
   width: fit-content;
   border-radius: 20px;
   margin-top: 30px;
-  margin-bottom: 30px;
+    
+      color: white;
 }
 .titulo_evento {
   text-align: center;
@@ -821,7 +834,7 @@ body .modal-open {
 /*Inicio Pagina LogIn*/
 
 .cienvehache {
-  height: 110vh;
+  height: 72vh;
   align-content: center;
 }
 
@@ -919,24 +932,16 @@ footer {
 
 footer {
   padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  gap: 10px;
-  padding: 0 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding: 0 5rem;
+    margin-top: 100px;
+    border-top: solid 1px grey;
 }
 
-.border-wrapper {
-  position: absolute;
-  width: 50%;
-  height: 10px;
-  top: 0;
-  left: 5rem;
-  right: 5rem;
-  height: 40px;
-  border-top: 15px solid rgb(136, 136, 136);
-  background-color: rgb(255, 255, 255);
-}
+
 
 .redes {
   grid-column: 1 / 3;
@@ -1109,19 +1114,20 @@ footer img {
 
   .container h1{
     margin: 0.5em 0 !important;
-    font-size: 1.4em !important;
+    font-size: 2.8em !important;
   }
   .container p{
-    font-size: 0.8em !important;
+    font-size: 1.8em !important;
   }
+  
 }
 
 
 
 .container {
-  margin: 10rem auto 3rem auto;
-  text-align: center;
-  color:orange;
+  margin: 5rem auto 3rem auto;
+    text-align: center;
+    color: orange;
 }
 
 .container *{
@@ -1129,7 +1135,9 @@ footer img {
 }
 
 .container h1{
-  font-size: 5rem;
+  font-size: 80px;
+    color: #ffb038;
+    text-shadow: -2px -2px 0 #fcff52, 2px -2px 0 #fcff52, -2px 2px 0 #fcff52, 2px 2px 0 #fcff52, 0 0 2px #fcff52;
 }
 
 .highlight {
@@ -1138,18 +1146,24 @@ footer img {
 
 .container p{
   color: #ffeac3;
+    font-size: 32px;
 }
 
 .botonSerParte {
   margin: 1.2em !important;
-  border-radius: 14px;
-  background-color: #0094ff; /* Fondo amarillo para el botón */
-  color: #e7e7e7; /* Texto oscuro para contraste */
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+    border-radius: 30px;
+    background-color: #0094ff;
+    color: #e7e7e7;
+    border: none;
+    padding: 30px;
+    cursor: pointer;
+    font-size: 32px;
 }
 
 .botonSerParte:hover {
   opacity: 0.9; /* Cambio sutil al pasar el mouse para dar feedback */
+}
+.botonSerParte a{
+    color: white;
+    text-decoration: none;
 }
