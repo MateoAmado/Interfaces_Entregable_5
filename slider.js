@@ -46,4 +46,9 @@ function cambiarImagen(indice) {
 
 // Inicializar
 mostrarImagen();
-  
+ 
+/*Como las imagenes no estan puestas en el html, para poder hacer diseño responsive debo generar todos los div */
+addEventListener('resize', ()=>{
+  if(innerWidth < 768){
+    document.querySelector('.imagen_cifras').innerHTML='<div class="imagen_cifras"> <h2 class="estadistica">5076 Árboles plantados</h2></div><div class="imagen_cifras volu"> <h2 class="estadistica">729 Voluntarios</h2></div> <div class="imagen_cifras loca"> <h2 class="estadistica">26 Localidades de cordoba</h2></div>'
+}});/*Pero, tengo problema con el diseño de las letras y el tamaño de las imagenes */

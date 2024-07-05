@@ -1,15 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Caro:Saca la barra de desplazamiento al ancho, 
-  quitar si quieren o les jode en algo, no cambia en negativo nada de lo trabajado si se quita.*/
-  font-family: "Roboto", sans-serif; 
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
-/*TODO todos: Armar parallax Header y armar footer*/
-/*TODO CARO PAGINA VOLUNTARIADO: posiblemente ampliar el ancho del contenedor, 
-lo que implique realizar un cambio en Javascript. Hay mucho espacio en ancho
-desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 .parallax {
   width: 100vw;
   height: 100vh;
@@ -117,7 +112,7 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 }
 
 /*Index escritorio*/
-.contenedorIndex{
+.contenedorIndex {
   margin: 1em 2em 0 3em;
 }
 /*
@@ -172,10 +167,10 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
   flex-direction: row;
   justify-items: center;
 }
-.descripcion_logo img{
+.descripcion_logo img {
   margin: 0 auto;
-height: 20em;
-width: 28rem;
+  height: 20em;
+  width: 28rem;
 }
 .descripcion_logo p {
   overflow-y: hidden;
@@ -255,11 +250,11 @@ width: 28rem;
 /*fin nuevo slider*/
 
 /*Inicio Se Parte*/
-.seParte{
-width: 100%;
+.seParte {
+  width: 100%;
 }
 
-.seParte h3{
+.seParte h3 {
   font-family: "Roboto", sans-serif;
   margin: 1.2em auto 0.2em auto;
   width: 10.5em;
@@ -267,34 +262,34 @@ width: 100%;
   color: #d8801b;
 }
 
-.textoSerParte{
-  color:rgb(196, 196, 196);
-} 
+.textoSerParte {
+  color: rgb(196, 196, 196);
+}
 
-.textoSerParte p{
+.textoSerParte p {
   text-indent: 10px;
   font-size: 1.4em;
   font-family: "Roboto", sans-serif;
   margin: 1rem 0 0 1rem;
 }
 
-.seParte a{
+.seParte a {
   cursor: pointer;
   width: 4em;
   font-size: 32px;
   background-color: #0094ff;
   border-radius: 19px;
   padding: 2em 4em;
-display: block;
+  display: block;
   margin: 1em auto 0 auto;
 }
 
-.seParte span{
+.seParte span {
   color: #0094ff;
 }
 
-.seParte a:hover{
- color:rgb(218, 218, 218);
+.seParte a:hover {
+  color: rgb(218, 218, 218);
   background-color: #0061a7;
 }
 
@@ -448,11 +443,11 @@ body {
 }
 
 /*Pagina Noticias*/
-.contenedor_agregar_noticia{
+.contenedor_agregar_noticia {
   display: none;
   justify-content: center;
 }
-.agregar_noticia{
+.agregar_noticia {
   background: #f2c066;
   padding: 12px;
   font-family: "Roboto", sans-serif;
@@ -614,16 +609,16 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content_noticia label{
+.modal-content_noticia label {
   color: white;
   font-size: 30px;
   font-family: "Roboto", sans-serif;
 }
 
-.modal-content_noticia form button{
+.modal-content_noticia form button {
   margin: 0 10px;
   background: linear-gradient(to right, #f1aa57, #f2901e);
   border-radius: 30px;
@@ -637,7 +632,7 @@ body {
   height: fit-content;
 }
 
-.modal-content_noticia input{
+.modal-content_noticia input {
   width: 700px;
   padding: 10px 16px;
   /* margin: 14px 0; */
@@ -651,7 +646,7 @@ body {
   margin-bottom: 40px;
 }
 
-.modal-content_noticia textarea{
+.modal-content_noticia textarea {
   width: 700px;
   height: 203px;
   padding: 10px;
@@ -664,7 +659,7 @@ body {
   border: 1px solid #888;
   width: 50%;
 }
-#descripcion{
+#descripcion {
   display: block;
 }
 .close {
@@ -696,21 +691,20 @@ body {
 /*Fin Pagina Noticias*/
 
 /*Pagina eventos*/
-.contenedor_eventos{
+.contenedor_eventos {
   text-align: -webkit-center;
 }
-.agregar_evento{
+.agregar_evento {
   text-align: center;
-    background: #f2c066;
-    font-size: x-large;
-    padding: 20px;
-    font-family: "Roboto", sans-serif;
-    cursor: pointer;
-    width: fit-content;
-    border-radius: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
+  background: #f2c066;
+  font-size: x-large;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  width: fit-content;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .titulo_evento {
   text-align: center;
@@ -719,13 +713,14 @@ body {
   color: #ffb038;
   margin-top: 50px;
 }
-.eventos_titulo{
+.eventos_titulo {
   padding-top: 30px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 80px;
   color: #ffb038;
-  text-shadow: -2px -2px 0 #fcff52, 2px -2px 0 #fcff52, -2px 2px 0 #fcff52, 2px 2px 0 #fcff52, 0 0 2px #fcff52;
+  text-shadow: -2px -2px 0 #fcff52, 2px -2px 0 #fcff52, -2px 2px 0 #fcff52,
+    2px 2px 0 #fcff52, 0 0 2px #fcff52;
 }
 .ubicacion_horario {
   margin-top: 20px;
@@ -829,8 +824,8 @@ body .modal-open {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
@@ -945,15 +940,15 @@ footer {
   grid-row: 2 / 3;
 }
 
-.horizontal{
+.horizontal {
   width: 100%;
 }
 
-.horizontal div{
+.horizontal div {
   margin: 6rem auto 0 auto;
-  border-bottom:solid 1px grey;
-  width:80%;
-  height:50px;
+  border-bottom: solid 1px grey;
+  width: 80%;
+  height: 50px;
 }
 
 footer {
@@ -1031,5 +1026,85 @@ footer img {
   font-size: 48px;
 }
 
-
+.loca {
+  background-image: url("img/voluntarios.png");
+}
+.volu {
+  background-image: url("img/cordoba_lago.png");
+}
 /*Fin de agregar Noticias*/
+/*INDEX CELULAR*/
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .imagenMontania,
+  .imagenCielo {
+    background-image: url("img/wallhaven-z8ojpy_1920x1080.png");
+  }
+  .tituloBanner {
+    font-size: 5em;
+  }
+
+  .nav a {
+    padding: 0.5rem 1rem;
+  }
+
+  .fa-solid fa-arrow-left,
+  .fa-solid fa-arrow-right {
+    display: none;
+  }
+  .imagen_posicion {
+    display: none;
+  }
+
+  .descripcion_logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .descripcion_logo p {
+    width: auto;
+    height: auto;
+    margin: 1rem 0;
+    font-size: 1em;
+    padding: 0.5em;
+  }
+
+  .descripcion_logo img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto 1rem auto;
+  }
+  .imagen_cifras {
+    height: 640px;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 0 2rem;
+  }
+
+  .redes {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .texto {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer img {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    justify-content: center;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+  }
+}
