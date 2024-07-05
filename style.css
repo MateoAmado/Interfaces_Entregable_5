@@ -120,7 +120,41 @@ desperdiciado y seguramente sea una posible critica al diseño de la pagina*/
 .contenedorIndex{
   margin: 1em 2em 0 3em;
 }
+/*
+.index_separte{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 200px;
+}
 
+.index_separte h1{
+  font-size: 80px;
+    color: orange;
+}
+.index_separte h2{
+  font-size: 25px;
+    color: #ffd78e;
+}
+.index_separte a{
+  margin-top: 40px;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  background: #0094ff;
+  padding: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.index_separte a:hover{
+  background-color: white;
+  color: #0094ff;
+}
+
+*/
 .que_es_forestaton {
   display: flex;
   flex-direction: column;
