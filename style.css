@@ -325,7 +325,6 @@ header{
 form input {
   width: 700px;
   padding: 10px 5px;
-  margin: 5px 0;
   border: 0;
   font-size: 32px;
   border-bottom: 1px solid #f1aa57;
@@ -834,8 +833,8 @@ body .modal-open {
 /*Inicio Pagina LogIn*/
 
 .cienvehache {
-  height: 72vh;
   align-content: center;
+  margin-bottom: 140px;
 }
 
 .loginDiv {
@@ -856,7 +855,7 @@ body .modal-open {
 
 .loginDiv input {
   display: block;
-  margin: 0 auto !important;
+  margin: 0 auto 10px auto !important;
   padding: 0 8px;
   border-radius: 6px;
   width: 20rem;
@@ -897,6 +896,30 @@ body .modal-open {
 .loginDiv button:hover {
   cursor: pointer;
   background-color: #c59d4d;
+}
+
+.incorrecto{
+  width: 700px;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 0;
+  font-size: 32px;
+  border-bottom: 1px solid #ff0000;
+  outline: none;
+  background: transparent;
+  color: #f52703;
+}
+
+.correcto{
+  width: 700px;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 0;
+  font-size: 32px;
+  border-bottom: 1px solid #0eda3a;
+  outline: none;
+  background: transparent;
+  color: #17f503;
 }
 /*Fin Pagina LogIn*/
 
