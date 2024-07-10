@@ -23,6 +23,7 @@ btnNextUno.addEventListener("click", () => {
     formDos.style.left = "40px";
     barraProgreso.style.width = "240px";
     introduccionformParrafo.textContent = "";
+    inputEmail.classList.remove("error-input");
   }
 });
 btnBackUno.addEventListener("click", () => {
@@ -33,15 +34,25 @@ btnBackUno.addEventListener("click", () => {
 
 //Segundo Paso
 btnNextDos.addEventListener("click", () => {
-  if (inputNombre.value.trim() === "") {
+    if(inputNombre.value.trim() === "" &&inputApellido.value.trim() === ""){
+        inputNombre.classList.add("error-input");
+        inputApellido.classList.add("error-input");
+        introduccionformParrafo.textContent =
+        "En orden de poder enviar el formulario, es necesario que se completen todos los campos";  
+    }
+  else if (inputNombre.value.trim() === "") {
+    inputApellido.classList.remove("error-input");
     inputNombre.classList.add("error-input");
     introduccionformParrafo.textContent =
       "En orden de poder enviar el formulario, es necesario que se completen todos los campos";
   } else if (inputApellido.value.trim() === "") {
+    inputNombre.classList.remove("error-input");
     inputApellido.classList.add("error-input");
     introduccionformParrafo.textContent =
       "En orden de poder enviar el formulario, es necesario que se completen todos los campos";
   } else {
+    inputApellido.classList.remove("error-input");
+    inputNombre.classList.remove("error-input");
     formDos.style.left = "-800px";
     formTres.style.left = "40px";
     barraProgreso.style.width = "360px";
