@@ -489,12 +489,19 @@ body {
 }
 
 .btnN{
-  cursor: pointer;
-  border-radius: 14px;
-  background-color: #0eda3a;
-  padding: 0.2em;
-  color: white;
-  font-size: 24px;
+  margin-top: 10px;
+    margin-bottom: 10px;
+    /* margin-top: 10px !important; */
+    cursor: pointer;
+    height: 1;
+    /* height: 200px; */
+    display: block;
+    border-radius: 14px;
+    background-color: #f2c066;
+    padding: 0.4em;
+    color: #ffffff;
+    font-size: 24px;
+    width: fit-content;
 }
 
 .noticias_titulo {

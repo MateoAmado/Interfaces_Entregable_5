@@ -84,10 +84,9 @@ function mostrarNoticias(noticiasFiltradas) {
                 </div>
                 <div class="contenido_noticia">
                     <div class="titulo_noticia"><h1>${noticia.titulo}</h1></div>
-                    <div class="resumen_noticia"><h1>${noticia.descripcion_breve}</h1></div>
+                    <div class="resumen_noticia"><a class="btnN"><i class="fa-solid fa-pencil"></i>Editar</a><h1 style="margin-top: 0px">${noticia.descripcion_breve}</h1></div>
                     <a href="noticia.html?id=${noticia.id}" class="leer_mas">Leer más</a>
                     <h2 class="fecha_noticia"><i class="fa-solid fa-calendar-days"></i>${noticia.fecha}</h2>
-                    <a class="btnN"><i class="fa-solid fa-pencil"></i>Editar</a>
                 </div>
             </div>
         `;
