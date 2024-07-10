@@ -488,6 +488,15 @@ body {
   border-bottom-left-radius: 20px;
 }
 
+.btnN{
+  cursor: pointer;
+  border-radius: 14px;
+  background-color: #0eda3a;
+  padding: 0.2em;
+  color: white;
+  font-size: 24px;
+}
+
 .noticias_titulo {
   
   text-align: center;

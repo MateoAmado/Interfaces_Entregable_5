@@ -61,7 +61,9 @@ function mostrarNoticias(noticiasFiltradas) {
     noticiasFiltradas.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
     contenedor.innerHTML = '';
     noticiasFiltradas.forEach(noticia => {
-        const noticiaHTML = `
+        let noticiaHTML = ``
+        if(!comprobarSesion()){
+            noticiaHTML=`
             <div class="noticia">
                 <div class="img_noticia">
                     <img src="${noticia.ruta_img}" alt="">
@@ -73,7 +75,23 @@ function mostrarNoticias(noticiasFiltradas) {
                     <h2 class="fecha_noticia"><i class="fa-solid fa-calendar-days"></i>${noticia.fecha}</h2>
                 </div>
             </div>
+        `;}
+        else{
+            noticiaHTML = `
+            <div class="noticia">
+                <div class="img_noticia">
+                    <img src="${noticia.ruta_img}" alt="">
+                </div>
+                <div class="contenido_noticia">
+                    <div class="titulo_noticia"><h1>${noticia.titulo}</h1></div>
+                    <div class="resumen_noticia"><h1>${noticia.descripcion_breve}</h1></div>
+                    <a href="noticia.html?id=${noticia.id}" class="leer_mas">Leer más</a>
+                    <h2 class="fecha_noticia"><i class="fa-solid fa-calendar-days"></i>${noticia.fecha}</h2>
+                    <a class="btnN"><i class="fa-solid fa-pencil"></i>Editar</a>
+                </div>
+            </div>
         `;
+        }
         contenedor.innerHTML += noticiaHTML;
     });
 }

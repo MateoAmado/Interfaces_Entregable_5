@@ -14,6 +14,8 @@
     const conditionalLink = document.getElementById('conditionalLink');
     const conditionalLink2 = document.getElementById('conditionalLinklogout');
 
+   
+
     document.addEventListener('DOMContentLoaded', function () {
         const root=document.getElementById("root");
         if(root){
@@ -35,6 +37,9 @@
             conditionalLink2.innerHTML='<i class="fa-solid fa-right-to-bracket"></i>Desloguear'
         }
     });
+
+ 
+
     function desloguear(){
         
         localStorage.setItem("sesion", false);
